@@ -1,3 +1,13 @@
+/* root variables */
+
+
+/* global reset*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
 /* style af header/nav */
 
 /* style af forside */
@@ -17,14 +27,14 @@
 
 }
 
-
-@media screen and ( min-width: 765px ) and (max-width: 1024px) {
+/* media query for tablet */
+@media screen and ( min-width: 768px ) and (max-width: 1024px) {
 
 
 }
 
-
-@media screen and ( min-width: 414px ) and (max-width: 764px) {
+/* media query for mobile */
+@media screen and ( min-width: 414px ) and (max-width: 767px) {
 
 
 }
