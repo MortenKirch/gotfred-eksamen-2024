@@ -15,7 +15,7 @@
 </head>
 <body>
     
-=======
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,23 +24,57 @@
     <title>Button Output Form</title>
 </head>
 <body>
-    <form  action="/submit" method="post" class="form">
+    <h1>GUIDE TIL FORUDBESTILLING AF PETITKAGER</h1>
+    <p class="guide-tekst">Når du skal forudbestille vores signatur petitkager hos os, skal du bestille minimum 4 stks.
+        Kagerne bliver pakket i bokse á 4 eller 6 stks.
+        Vær opmærksom på, at at forudbestillingen skal foretages senest dagen før. </p>
+    <div>
+   
+    <figure class="container-kagebox">
+        <div>
+        <div class="container-beige-4">
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+        </div>
+        <p>box á 4 stk / 188 kr</p>
+    </div>
+
+    <div>
+        <div class="container-beige-6">
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+            <div class="container-blue-round"></div>
+        </div>
+        <p>box á 6 stk / 280 kr</p>
+    </div>
+    </figure>
+    
+    </div>  
+    <h2 class="">FORUDBESTIL KAGER</h2>
+    <form  action="https://formspree.io/f/meqynkkn" method="post" class="form">
         <section id="myForm">
 
         </section>
-        <legend>Oversigt over bestilling</legend>
+        <legend class="bestilling-overskrift">Oversigt over bestilling</legend>
         <section class="produkt-formular-section">
             
-            <div class="orderList">
-                <ul class="displayArea"></ul>
+            <div class="orderList displayArea">
+           
+                <input type="Pris" name="Pris" placeholder="Total Pris:" class="total-pris" readonly>
             </div>
 
           <div class="produkt-formular">  
             <h2 class="overskrift-udfyld">UDFYLD INFORMATION</h2>
         <input type="email" name="email" placeholder="E-mail" class="formular-email">
         <input type="name" name="name" placeholder="Navn" class="formular-navn">
+        <input type="number" name="Telf:" placeholder="Telefon nummer" class="formular-navn">
         <textarea id="besked" name="besked" placeholder="Kommentar eller bemærkninger" class="formular-besked" rows="4" cols="50"></textarea>
-        <input type="submit" value="Send" class="koeb-button">
+        <input type="submit" value="BESTIL" class="koeb-button">
      </div>
  
 
@@ -49,13 +83,11 @@
     </form>
 
 
-<<<<<<< Updated upstream
->>>>>>> b1deca24f4eb63c729cddd44850af1161c87024b
-=======
 
-    <script src="../javascript/script.js">
+
+    <script src="../javascript/kager.js">
         
     </script>
->>>>>>> Stashed changes
+
 </body>
 </html>

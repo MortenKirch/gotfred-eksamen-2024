@@ -16,12 +16,27 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family:'Montserrat', sans-serif;
+      font-family:'Montserrat', sans-serif;
 }
 a {
    text-decoration: none;
 }
-
+h1{
+   text-align: center;
+   font-size: 2.5rem;
+   color: var(--blue);
+      font-family:'Montserrat', sans-serif;
+   font-weight: var(--light);
+}
+h2{
+      font-family:'Montserrat', sans-serif;
+   color: var(--blue);
+   font-size: 2rem;
+   text-align: center;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   font-weight: var(--light);
+}
 /* style af header/nav */
  .navbar {
    font-size: 18px;
@@ -69,25 +84,78 @@ a {
 
 /* style af kager og bestilling */
 
+.guide-tekst{
+   width: 40vw;
+   display: flex;
+   text-align: center;
+   line-height: 2rem;
+   margin: auto;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+  
+   
+}
+.container-kagebox{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   gap: 50px;
+   margin-bottom: 2rem;
+   
 
+}
+.container-beige-4{
+width: 150px;
+height: 150px;
+background-color: var(--yellow);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+
+}
+.container-blue-round{
+   width: 60px;
+   height: 60px;
+   border-radius: 40px;
+   background-color: var(--blue);
+}
+.container-beige-6{
+   width: 225px;
+   height: 150px;
+   background-color: var(--yellow);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+ 
+}
 #myForm{
    display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   justify-items: center;
+  width: 90vw;
+margin: auto;
 
 }
 
 .produkt-figure{
-width: 20vw;
+max-width: 300px;
+margin-bottom: 2rem;
 
 }
 .produkt-overskrift{
    font-size: 1.5rem;
    text-align: center;
+   color: var(--offblack);
+   font-weight: var(--light);
 }
 .produkt-information{
-   border: 1px solid black;
+   border: 1px solid var(--offblack);
    border-radius: 20px;
    display: flex;
    flex-direction: column;
@@ -96,7 +164,7 @@ width: 20vw;
    overflow: hidden;
 }
 .produkt-billede{
-width: 21vw;
+max-width: 300px;
 height: auto;
 }
 .produkt-ikoner{
@@ -111,7 +179,8 @@ height: auto;
 
 }
 .produkt-p{
-   font-family: monsserat;
+      font-family:'Montserrat', sans-serif;
+   
 }
 
 .produkt-minus-button{
@@ -119,12 +188,16 @@ height: auto;
    border: 0;
    border-radius: 20px 0px 0px 20px;
    width: 40px;
+   background-color: var(--beige);
+   font-size: 1.2rem;
 }
 .produkt-plus-button{
    height: 30px;
    border: 0;
    border-radius: 0 20px 20px 0;
    width: 40px;
+   background-color: var(--beige);
+   font-size: 1.2rem;
 }
 .produkt-button-value{
 width: 30px;
@@ -139,7 +212,8 @@ margin-bottom:0.25rem;
    width: 120px;
    height: 30px;
    margin: 0.25rem;
-   color: var(blue);
+   color: var(--blue);
+   background-color: var(--lightblue);
 }
 
 .produkt-formular{
@@ -150,6 +224,13 @@ margin-bottom:0.25rem;
    flex-direction: column;
    align-items: center;
    
+}
+.bestilling-overskrift{
+   font-weight: var(--medium);
+   font-size: 2.2rem;
+   margin: 4rem;
+   color: var(--blue);
+   font-family:'Montserrat', sans-serif;
 }
 .produkt-formular-section{
    width: 80vw;
@@ -196,8 +277,9 @@ margin: 0.5rem;
 .overskrift-udfyld{
    margin-top: 4rem;
    margin-bottom: 2rem;
-   font-family: monsserat;
+   font-family:'Montserrat', sans-serif;
    color: var(--blue);
+   font-size: 1.8rem;
 }
 .orderList{
 height: 450px;
@@ -213,8 +295,52 @@ margin-top: 3rem;
    height: 30px;
    border: 0;
    border-radius: 20px;
-   
+   background-color: var(--blue);
+   color: var(--offwhite);
    margin: 0.5rem; 
+}
+.koeb-liste{
+   color: var(--offblack);
+   margin-top: 1rem;
+   list-style-type: none;
+   font-size: var(--light);
+   font-size: 1.2rem;
+   border: 0;
+}
+
+.displayArea{
+width: 300px;
+height: 450px;
+}
+
+.removeButton{
+ border: 0;
+ background-color: white;
+ width: 50px;
+ color: darkred;
+ opacity: 60%;
+}
+
+.orderList{
+   position: relative;  
+   width: 300px;        
+   height: 400px;       
+ 
+}
+
+.total-pris {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 10px;
+   border: 0;
+   color: var(--offblack);
+   font-size: 1.2rem;
+ 
+}
+.total-pris::placeholder{
+   color: black;
+   font-size: 1.2rem;
 }
 /* style af catering */
 
@@ -223,12 +349,19 @@ margin-top: 3rem;
 /* style af kontakt */
 
 
-/* media query for desktop */
-/* @media screen and (min-width: 1025px) {
-} */
+/* media query for desktop  */
+@media screen and (min-width: 1025px) {
+
+}
 
 /* media query for tablet */
-@media screen and ( min-width: 768px ) {
+@media screen and ( min-width: 768px ) and (max-width: 1024px) {
+   h1{
+      font-size: 2rem;
+   }
+   h2{
+      font-size: 1.5rem;
+   }
    .navbar {
       display: flex;
       justify-content: space-between;
@@ -265,10 +398,41 @@ margin-top: 3rem;
       color: var(--blue);
     }
 
+    #myForm{
+      grid-template-columns: 1fr 1fr;
+   
+    }
+    .formular-email{
+     width: 30vw;
+
+      }
+      
+      .formular-navn{
+         width: 30vw;
+      }
+      
+      .formular-besked{
+      width: 30.5vw;
+ 
+      
+      }
+      .overskrift-udfyld{
+         font-size: 1.5rem;
+      }
 }
 
 /* media query for mobile */
-/* @media screen and ( min-width: 414px ) and (max-width: 767px) {
-
-
-} */
+@media screen and ( min-width: 414px ) and (max-width: 767px) {
+   #myForm{
+      grid-template-columns:1fr;
+   
+    }
+    .produkt-formular-section{
+      grid-template-columns: 1fr;
+      justify-content: center;
+      
+    }
+    .orderList{
+      justify-self: center;
+    }
+}
