@@ -1,11 +1,9 @@
-<<<<<<< Updated upstream
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
 
 navBarToggle.addEventListener("click", function() {
   mainNav.classList.toggle("active");
 });
-=======
 
 
 // Select the parent element where the figures will be appended
@@ -143,4 +141,3 @@ kageData.forEach(kage => {
       }
   }
   
->>>>>>> Stashed changes
