@@ -1,93 +1,69 @@
 <!DOCTYPE html>
-
 <html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gotfred Aarhus</title>
     <meta name="title" content="Gotfred Aarhus">
     <meta name="description" content="Gotfred er et patisserie i midten af Aarhus, tæt på Dokken. Vi laver hjemmelavet sæsompræget konditori kager af højeste kvalitet.">
     <meta name="keywords" content="patisserie, konditori, bager, café, catering, gotfred, desserter, bageri, portionskager">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
     <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Button Output Form</title>
 </head>
 <body>
     <h1>GUIDE TIL FORUDBESTILLING AF PETITKAGER</h1>
     <p class="guide-tekst">Når du skal forudbestille vores signatur petitkager hos os, skal du bestille minimum 4 stks.
         Kagerne bliver pakket i bokse á 4 eller 6 stks.
-        Vær opmærksom på, at at forudbestillingen skal foretages senest dagen før. </p>
-    <div>
-   
-    <figure class="container-kagebox">
-        <div>
-        <div class="container-beige-4">
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-        </div>
-        <p>box á 4 stk / 188 kr</p>
-    </div>
-
-    <div>
-        <div class="container-beige-6">
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-            <div class="container-blue-round"></div>
-        </div>
-        <p>box á 6 stk / 280 kr</p>
-    </div>
-    </figure>
+        Vær opmærksom på, at at forudbestillingen skal foretages senest dagen før.</p>
     
-    </div>  
-    <h2 class="">FORUDBESTIL KAGER</h2>
-    <form  action="https://formspree.io/f/meqynkkn" method="post" class="form">
-        <section id="myForm">
+    <div class="kage-container">
 
-        </section>
-        <legend class="bestilling-overskrift">Oversigt over bestilling</legend>
-        <section class="produkt-formular-section">
-            
-            <div class="orderList displayArea">
-           
-                <input type="Pris" name="Pris" placeholder="Total Pris:" class="total-pris" readonly>
+        <figure class="container-kagebox">
+            <div>
+                <div class="container-beige-4">
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                </div>
+                <p>box á 4 stk / 188 kr</p>
             </div>
-
-          <div class="produkt-formular">  
-            <h2 class="overskrift-udfyld">UDFYLD INFORMATION</h2>
-        <input type="email" name="email" placeholder="E-mail" class="formular-email">
-        <input type="name" name="name" placeholder="Navn" class="formular-navn">
-        <input type="number" name="Telf:" placeholder="Telefon nummer" class="formular-navn">
-        <textarea id="besked" name="besked" placeholder="Kommentar eller bemærkninger" class="formular-besked" rows="4" cols="50"></textarea>
-        <input type="submit" value="BESTIL" class="koeb-button">
-     </div>
- 
-
-    </section>
+            <div>
+                <div class="container-beige-6">
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                    <div class="container-blue-round"></div>
+                </div>
+                <p>box á 6 stk / 280 kr</p>
+            </div>
+        </figure>
+    </div>  
     
+    <h2>FORUDBESTIL KAGER</h2>
+    <form action="https://formspree.io/f/meqynkkn" method="post" class="form">
+        <main id="myForm">
+            
+        </main>
+        <h2 class="bestilling-overskrift">Oversigt over bestilling</h2>
+
+        <section class="produkt-formular-section">
+            <div class="orderList displayArea">
+                <input type="text" name="Pris" placeholder="Total Pris:" class="total-pris" readonly>
+            </div>
+            <div class="produkt-formular">  
+                <h2 class="overskrift-udfyld">UDFYLD INFORMATION</h2>
+                <input type="email" name="email" placeholder="E-mail" class="formular-email" required>
+                <input type="text" name="name" placeholder="Navn" class="formular-navn" required>
+                <input type="tel" name="phone" placeholder="Telefon nummer" class="formular-navn" required>
+                <textarea id="besked" name="besked" placeholder="Kommentar eller bemærkninger" class="formular-besked" rows="4" cols="50"></textarea>
+                <input type="submit" value="BESTIL" class="koeb-button">
+            </div>
+        </section>
     </form>
 
-
-
-
-    <script src="../javascript/kager.js">
-        
-    </script>
-
+    <script src="../javascript/kager.js"></script>
 </body>
 </html>
