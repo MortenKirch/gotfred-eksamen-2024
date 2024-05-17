@@ -475,6 +475,48 @@ height: 450px;
 }
 /* style af catering */
 
+.gul-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gul-box {
+  display: flex;
+  align-items: center;
+  background-color: #F8EEB7;
+}
+
+.storkage-image {
+  width: 40%;
+  height: auto;
+}
+
+img.gul-image{
+  width: 20%
+}
+
+.gul-text {
+  width: 60%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom:200px ;
+
+}
+
+.gul-text h2 {
+  color: #2D65B6;
+  font-weight: 500;
+}
+
+.gul-text p {
+  color: #333;
+}
+
+
+
 /* style af om gotfred */
 
 /* style af kontakt */
