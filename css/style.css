@@ -29,12 +29,10 @@ h1{
    font-weight: var(--light);
 }
 h2{
-      font-family:'Montserrat', sans-serif;
+  font-family:'Montserrat', sans-serif;
    color: var(--blue);
    font-size: 2rem;
    text-align: center;
-   margin-bottom: 2rem;
-   margin-top: 2rem;
    font-weight: var(--light);
 }
 /* style af header/nav */
@@ -117,10 +115,11 @@ h2{
 }
 .gotfred-forside-text {
   background-color: var(--lightblue);
-  height: 39.45rem;
+  height: auto;
   width: 19.725rem;
-  line-height: 1.75;
-  padding: 1.5rem;
+  line-height: 1.9;
+  padding: 1.7rem;
+  padding-top: 6rem;
 }
 .gotfred-forside-picture img {
   height: 100vh;
@@ -147,9 +146,10 @@ h2{
 }
 .bestil-section h1,a {
   margin: 1rem;
+  font-weight: var(--medium);
 }
 .bestil-section h1 {
-  color: var(--offwhite);
+  color: var(--blue);
   font-style: italic;
   font-weight: var(--regular);
 }
@@ -159,6 +159,7 @@ h2{
   color: var(--blue);
   font-weight: var(--light);
   border-radius: 20px;
+  font-weight: var(--medium);
 }
 
 .forside-bog {
@@ -168,26 +169,34 @@ h2{
   margin: 3rem;
 }
 .forside-bog-picture {
-  background-image: url(../pictures/gotfred-pattern-yellow.png);
+  background-image: url(../pictures/pattern-yellow.webp);
   width: 50vw;
-  height: 100vh;
+  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-left: 13%;
+  padding-top: 2.5%;
 
 }
 .forside-bog-picture img {
-  height: 100vh;
+  height: 60vh;
   width: auto;
 }
 .forside-bog-text {
+  
   background-color: var(--yellow);
   height: 39.45rem;
   width: 30rem;
   line-height: 1.75;
   padding: 1.5rem;
+  text-align: center;
+}
+.forside-bog-text h2,p,a {
+  padding-bottom: 3rem;
 }
 .forside-bog-text p {
   color: var(--offblack);
+  font-size: 1.2rem;
 }
 .forside-bog-text h2 {
   color: var(--blue);
@@ -200,6 +209,7 @@ h2{
   color: var(--yellow);
   font-weight: var(--regular);
   border-radius: 20px;
+  font-size: 1.2rem;
 }
 
 
@@ -471,12 +481,32 @@ height: 450px;
 
 
 /* media query for desktop  */
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1025px) {
+  #myForm{
+    grid-template-columns: 1fr 1fr;
+ 
+  }
+  .formular-email{
+   width: 30vw;
 
+    }
+    
+    .formular-navn{
+       width: 30vw;
+    }
+    
+    .formular-besked{
+    width: 30.5vw;
+
+    
+    }
+    .overskrift-udfyld{
+       font-size: 1.5rem;
+    }
 }
 
 /* media query for tablet */
-@media screen and ( min-width: 768px ) and (max-width: 1024px) {
+@media screen and ( min-width: 768px ) {
    h1{
       font-size: 2rem;
    }
@@ -519,27 +549,7 @@ height: 450px;
       color: var(--blue);
     }
 
-    #myForm{
-      grid-template-columns: 1fr 1fr;
-   
-    }
-    .formular-email{
-     width: 30vw;
-
-      }
-      
-      .formular-navn{
-         width: 30vw;
-      }
-      
-      .formular-besked{
-      width: 30.5vw;
- 
-      
-      }
-      .overskrift-udfyld{
-         font-size: 1.5rem;
-      }
+    
 }
 
 /* media query for mobile */

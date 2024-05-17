@@ -1,0 +1,87 @@
+/* media query for desktop  */
+@media screen and (max-width: 1025px) {
+    #myForm{
+      grid-template-columns: 1fr 1fr;
+   
+    }
+    .formular-email{
+     width: 30vw;
+  
+      }
+      
+      .formular-navn{
+         width: 30vw;
+      }
+      
+      .formular-besked{
+      width: 30.5vw;
+  
+      
+      }
+      .overskrift-udfyld{
+         font-size: 1.5rem;
+      }
+  }
+  
+  /* media query for tablet */
+  @media screen and ( min-width: 768px ) {
+     h1{
+        font-size: 2rem;
+     }
+     h2{
+        font-size: 1.5rem;
+     }
+     .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+      }
+    
+      .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    
+      .main-nav li {
+        margin: 0;
+      }
+    
+      .nav-links {
+        margin-left: 40px;
+      }
+    
+      .logo {
+        margin-top: 0;
+      }
+    
+      .navbar-toggle {
+        display: none;
+      }
+    
+      .logo:hover,
+      .nav-links:hover {
+        color: var(--blue);
+      }
+  
+      
+  }
+  
+  /* media query for mobile */
+  @media screen and ( min-width: 414px ) and (max-width: 767px) {
+     #myForm{
+        grid-template-columns:1fr;
+     
+      }
+      .produkt-formular-section{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        
+      }
+      .orderList{
+        justify-self: center;
+      }
+  }
