@@ -515,6 +515,143 @@ img.gul-image{
   color: #333;
 }
 
+#bestil {
+  font-weight: 300;
+}
+
+.text-container {
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text container */
+  text-align: center; /* Center the text */
+}
+
+.text-container p {
+  line-height: 1.4; /* Adjust the line height for compact text */
+  margin-bottom: 10px; /* Reduce space below the paragraph */
+}
+
+.skriv-button {
+  background-color: #2D65B6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.catering-formular-section {
+  width: 80vw;
+  background-color: var(--lightblue);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  border-radius: 15px;
+
+}
+
+#bestil{
+  font-weight: 300;
+}
+
+.formular-section {
+  background-color: var(--lightblue);
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.formular-section h2 {
+  color: #2D65B6;
+  margin-bottom: 20px; /* Add space below the heading */
+    line-height: 1.2; /* Reduce line height for more compact text */
+    text-align: center; /* Center the heading text */
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create a two-column layout */
+  gap: 20px; /* Add space between grid items */
+  padding-left: 130px;
+  padding-top: 22px;
+}
+
+
+.catering-formular-email{
+  height: 40px;
+  width: 40vw;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+  
+.catering-formular-navn{
+  height: 40px;
+  width: 40vw;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+  
+.catering-formular-anledning{
+  width: 40vw;
+  height: 10vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.catering-formular-kagedetaljer{
+  width: 40vw;
+  height: 17vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.catering-formular-kommentar{
+  width: 40vw;
+  height: 20vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-top: 13px;
+  line-height: 1.2;
+}
+
+label span {
+  color: red;
+}
+
+input, textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; 
+}
+
+button[type="submit"] {
+  background-color: #2D65B6;
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  text-align: center;
+  display: block;
+  grid-column: span 2; 
+  margin: 20px auto; 
+  margin-right: 226px; /* centrer button mere */
+}
+
 
 
 /* style af om gotfred */
