@@ -25,37 +25,39 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-        <a href="index.html">
-            <img class="logo" src="pictures/logo/gotfred-logo.webp" alt="gotfred logo">
-        </a>
-        <ul class="main-nav" id="js-menu">
-          <li>
-            <a href="pages/kager-og-bestilling.html" class="nav-links">kager & bestilling</a>
-          </li>
-          <li>
-            <a href="pages/catering.html" class="nav-links">catering</a>
-          </li>
-          <li>
-            <a href="pages/om-gotfred.html" class="nav-links">om gotfred</a>
-          </li>
-          <li>
-            <a href="pages/kontakt.html" class="nav-links">kontakt</a>
-          </li>
-        </ul>
+    <header class="nav-header">
+      <nav class="nav container">
+          <div class="nav-logo-container">
+            <a href="index.html" class="nav-logo">
+                <img src="gotfred-logo.webp" alt="gotfred logo blå">
+            </a>
+            
+            <div class="nav-toggle" id="nav-toggle">
+              <i class="fa-solid fa-xmark nav-close"></i> 
+              <i class="fa-solid fa-bars nav-burger"></i>
+            </div>
+          </div>
+
+          <!--=============== NAV MENU ===============-->
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">kager & bestilling</a></li>
+                <li><a href="om-os.html" class="nav-link">catering</a></li>
+                <li><a href="om-os.html" class="nav-link">om gotfred</a></li>
+                <li><a href="om-os.html" class="nav-link">kontakt os</a></li>
+            </ul>
+          </div>
       </nav>
+    </header>
 
       <!-- Forside sæsonkage. -->
 
-      <header class="forside-header">
+      <section class="forside-header">
         <div class="season-text">
           <h2>SÆSONKAGE</h2>
           <p>kan købes fra 20. april</p>
         </div>
-      </header>
+      </section>
 
       <main class="main-forside">
         <div class="gotfred-forside-picture">
