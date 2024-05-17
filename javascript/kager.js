@@ -96,6 +96,7 @@ fetch(url)
             addButton.textContent = "TILFØJ";
             addButton.onclick = function() {
                 displayValue(this.parentNode.querySelector(".output"), this);
+                updateTotalQuantity();
             };
 
             // Append the elements to productInfo
@@ -122,7 +123,7 @@ fetch(url)
             let currentValue = parseInt(outputField.value);
             let newValue = currentValue + change;
 
-            // Ensure the value doesn"t go below zero
+            // Ensure the value doesn't go below zero
             if (newValue < 0) {
                 newValue = 0;
             }
@@ -173,6 +174,7 @@ function displayValue(outputField, addButton) {
         deleteItem.addEventListener("click", function() {
             displayArea.removeChild(listItem);
             displayArea.removeChild(deleteItem);
+            updateTotalQuantity();
         });
 
         // Reset the output field value after adding to the list
@@ -182,19 +184,24 @@ function displayValue(outputField, addButton) {
         addButton.style.backgroundColor = "#2D65B6";
         addButton.style.color = "#FFFFFF";
         addButton.textContent = "TILFØJET";
+
+        // Update total quantity
+        updateTotalQuantity();
     } else {
         // Alert the user to select at least one cake
         alert("Vælg venligst mindst 1 kage");
     }
 }
 
-// Function to handle form submission
-function handleFormSubmit(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Calculate total quantity of cakes selected
-    const orderListItems = document.querySelectorAll(".orderList input");
+/**
+ * Calculates and logs the total quantity of cakes selected.
+ */
+const totalPriceElement = document.querySelector(".total-pris");
+function updateTotalQuantity() {
+    const orderListItems = document.querySelectorAll(".koeb-liste");
     let totalQuantity = 0;
+
+    // Calculate total quantity
     orderListItems.forEach(orderItem => {
         const quantityText = orderItem.value.split("x")[0].trim(); // Extract quantity from input value
         const quantity = parseInt(quantityText);
@@ -203,17 +210,75 @@ function handleFormSubmit(event) {
         }
     });
 
-    // Check if total quantity is at least 4
-    console.log("Total quantity selected:", totalQuantity);
+    const priceForFour = 188;
+    const priceForSix = 280;
+    const priceForOne = 48;
+    let totalPrice = 0;
+    
+    if (totalQuantity === 1) {
+        totalPrice = priceForOne;
+        totalPriceElement.value = `Du mangler 3 kager`;
+    } else if (totalQuantity === 2){
+        totalPrice = priceForOne * 2;
+        totalPriceElement.value = `Du mangler 2 kager`;
+    } else if (totalQuantity === 3){  
+        totalPrice = priceForOne * 3;
+        totalPriceElement.value = `Du mangler 1 kage`;
+    }else if (totalQuantity % 2 !== 0) {
+        totalPriceElement.value = `ulige antal kager`;
+        console.log(totalPriceElement.value);
+    }  else if (totalQuantity === 4) {
+        totalPrice = priceForFour;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 6) {
+        totalPrice = priceForSix;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 8) {
+        totalPrice = priceForFour * 2;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 10) {
+        totalPrice = priceForSix + priceForFour;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 12) {
+        totalPrice = priceForSix * 2;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 14) {
+        totalPrice = priceForFour * 2 + priceForSix;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 16) {
+        totalPrice = priceForSix * 2 + priceForFour;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 18) {
+        totalPrice = priceForSix * 3;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } else if (totalQuantity === 20) {
+        totalPrice = priceForSix * 2 + priceForFour * 2;
+        totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
+    } 
+    
+   
+
+    console.log("Total pris:", totalPrice);
+}
+
+
+
+// Function to handle form submission
+function handleFormSubmit(event) {
+    event.preventDefault(); // Prevent default form submission
+    const totalQuantity = parseInt(totalPriceElement.value.split(":")[1].trim());
+
     if (totalQuantity < 4) {
         alert("Vælg venligst mindst 4 kager.");
+    } else if (totalQuantity > 20) {
+        alert("Du kan maksimalt vælge 20 kager.");
     } else {
         // If validation passes, submit the form
         event.target.submit();
     }
 }
-
 // Add event listener to form submission
 const form = document.querySelector(".form");
 form.addEventListener("submit", handleFormSubmit);
+
 
