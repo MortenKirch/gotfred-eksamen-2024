@@ -13,6 +13,45 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <div class="catering-container">
+        <div class="gul-box">
+            <img src="/pictures/bryllupskage.jpg" alt="Cake Image" class="storkage-image">
+            <div class="gul-text  text-container">
+                <h2>CATERING</h2>
+                <p>Gør dit næste event lidt sødere med Gotfred Patisserie!
+                    Vi tilbyder skræddersyede kageoplevelser til enhver anledning, intime fødselsdage, storslåede fester og firma arangementer.
+                    Vores team hjælper dig med at skabe lækre, smukke kager, der passer perfekt til lejligheden.
+                    Skrive til os og få planlagt de lækre detaljer til dit event!
+                </p>
+                <button class="skriv-button">SKRIV TIL OS</button>
+            </div>
+        </div>
+
+        <h2 id="bestil" >BESTIL CATERING HOS GOTFRED</h2>
+
+      <section class="catering-formular-section">
+         <div class="formular-section">
+           
+            <form>
+                <label for="name">Navn <span>*</span></label>
+                <input type="text" id="name" name="name" placeholder="Navn her..." class="catering-formular-navn" required>
+                
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="Email her..." class="catering-formular-email" required>
+                
+                <label for="occasion">Anledning og antal kuverter <span>*</span></label>
+                <input type="text" id="occasion" name="occasion" placeholder="Skriv her..." class="catering-formular-anledning" required>
+                
+                <label for="cake-details">Kagedetaljer <span>*</span></label>
+                <input type="text" id="cake-details" name="cake-details" placeholder="Skriv her..." class="catering-formular-kagedetaljer" required>
+                
+                <label for="comments">Kommentar/bemærkninger</label>
+                <textarea id="comments" name="comments" placeholder="Skriv her..." class="catering-formular-kommentar" ></textarea>
+                
+                <button type="submit">SEND</button>
+            </form>
+         </div>
+      </section>  
+    </div>
 </body>
 </html>
