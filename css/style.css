@@ -485,10 +485,11 @@ height: 450px;
   display: flex;
   align-items: center;
   background-color: #F8EEB7;
+
 }
 
 .storkage-image {
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 
@@ -503,6 +504,7 @@ img.gul-image{
   align-items: center;
   flex-direction: column;
   padding-bottom:200px ;
+  font-size: 1.5rem;
 
 }
 
@@ -510,6 +512,7 @@ h2#catering {
   color: #2D65B6;
   font-weight: 500;
   padding-bottom: 20px;
+  font-size: 3rem;
 }
 
 
@@ -555,11 +558,17 @@ h2#catering {
 h2#bestil {
   font-weight: 400;
   padding: 30px;
+  font-size: 2.5rem;
 
 }
 
 
-
+.extra-tekst{
+  font-weight: var(--light);
+  font-size: 1rem;
+  text-align: start;
+  color: gray;
+}
 .formular-section {
   background-color: var(--lightblue);
   padding: 20px;
@@ -600,15 +609,18 @@ form {
   
 .catering-formular-anledning{
   width: 40vw;
-  height: 10vh;
+  height: 6vh;
   border: 0;
   border-radius: 10px;
   padding: 10px;
+ 
 }
-
+textarea{
+  resize: none;
+}
 .catering-formular-kagedetaljer{
   width: 40vw;
-  height: 17vh;
+  height: 10vh;
   border: 0;
   border-radius: 10px;
   padding: 10px;
@@ -616,7 +628,7 @@ form {
 
 .catering-formular-kommentar{
   width: 40vw;
-  height: 20vh;
+  height: 15vh;
   border: 0;
   border-radius: 10px;
   padding: 10px;
