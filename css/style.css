@@ -22,11 +22,11 @@ a {
    text-decoration: none;
 }
 h1{
-   text-align: center;
-   font-size: 2.5rem;
-   color: var(--blue);
-      font-family:'Montserrat', sans-serif;
-   font-weight: var(--light);
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--blue);
+    font-family:'Montserrat', sans-serif;
+    font-weight: var(--light);
 }
 h2{
   font-family:'Montserrat', sans-serif;
@@ -80,6 +80,8 @@ h2{
  
 /* style af forside */
 
+
+/* Sæsonkage */
 .season-text {
   background-color: var(--yellow);
   width: 16rem;
@@ -97,6 +99,9 @@ h2{
 .season-text p {
   font-weight: var(--light);
 }
+
+/* Sæsonkage baggrunds billede. */
+
 .forside-header {
   display: flex;
   justify-content: flex-end;
@@ -106,6 +111,8 @@ h2{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* Gotfred cafe beskrivelse. */
 
 .main-forside {
   display: flex;
@@ -125,6 +132,8 @@ h2{
   height: 100vh;
   width: auto;
 }
+
+/* Forside bestil */
 
 .forside-bestil {
   display: flex;
@@ -161,6 +170,22 @@ h2{
   border-radius: 20px;
   font-weight: var(--medium);
 }
+
+/* forside drinks slider */
+
+  .forside-drikke {
+
+  }
+  .forside-drikke h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: var(--medium);
+    font-size: 2.2rem;
+  }
+  .slide-container {
+
+  }
+/* Forside bog */
 
 .forside-bog {
   display: flex;
