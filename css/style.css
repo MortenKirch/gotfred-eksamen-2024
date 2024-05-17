@@ -506,10 +506,12 @@ img.gul-image{
 
 }
 
-.gul-text h2 {
+h2#catering {
   color: #2D65B6;
   font-weight: 500;
+  padding-bottom: 20px;
 }
+
 
 .gul-text p {
   color: #333;
@@ -551,10 +553,12 @@ img.gul-image{
 }
 
 h2#bestil {
-  font-weight: 300;
+  font-weight: 400;
   padding: 30px;
 
 }
+
+
 
 .formular-section {
   background-color: var(--lightblue);
