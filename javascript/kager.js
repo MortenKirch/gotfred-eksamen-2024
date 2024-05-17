@@ -1,54 +1,55 @@
-// Select the parent element where the figures will be appended
+
 const parentElement = document.getElementById("myForm");
 
-// URL to the JSON file containing cake data
+// Url til vores json fil
 const url = "../json/kager.json";
 
-// Fetch the JSON data
+// Fetch JSON data
 fetch(url)
     .then(response => {
-        // Check if the response is ok, if not, throw an error
+        // tjekker om responsen er okay, hvis ikke bruger vi throw til at se om der er en error
         if (!response.ok) {
-            throw new Error("Network response was not ok");
+            throw new Error("fejl i responsen");
         }
-        // Parse and return the JSON data
+        // hvis responsen er okay, konverter vi dataen til json
         return response.json();
     })
     .then(data => {
-        // Extract the "kager" array from the fetched data
+        // modtager dataen fra vores respons og laver en const til at tage fat om den data vi vil bruge
         const kageData = data.kager;
 
-        // Loop through each item in kageData and create the necessary elements
+        // laver et forEach loop, for at tage fat om de forskellige objekter der er i vores json fil
+        // og laver elementer til hvert objekt
         kageData.forEach(kage => {
-            // Create a figure element for each cake
+            // laver et figure element til alle kagerne
             const figure = document.createElement("figure");
             figure.classList.add("produkt-figure");
 
-            // Create an element for the cake name
+            // laver en overskift til alle kagerne
             const productName = document.createElement("h2");
             productName.classList.add("produkt-overskrift");
             productName.textContent = kage.navn;
 
-            // Create a div to contain the product information
+            // laver en div som skal indholde dataen fra kagerne
             const productInfo = document.createElement("div");
             productInfo.classList.add("produkt-information");
 
-            // Create an image element for the cake
+            // laver et img tag til kagerne og tager deres billede og insætter, samt laver alt text
             const productImage = document.createElement("img");
             productImage.classList.add("produkt-billede");
             productImage.src = kage.billede;
             productImage.alt = `billede af ${kage.navn}`;
 
-            // Create a paragraph element for the cake description
+            // laver et p element som skal indholde beksrivelsen af vores kager
             const productDescription = document.createElement("p");
             productDescription.classList.add("produkt-p");
             productDescription.textContent = kage.beskrivelse;
 
-            // Create a div to contain the icons
+            // laver en div til som skal indeholde vores ikoner
             const productIcons = document.createElement("div");
             productIcons.classList.add("produkt-ikoner");
 
-            // Loop through each icon URL and create img elements for them
+            // laver et for each loop af vores ikoner så den tager alle ikonerne som er givet i json filen
             kage.ikoner.forEach(iconUrl => {
                 const icon = document.createElement("img");
                 icon.src = iconUrl;
@@ -56,26 +57,31 @@ fetch(url)
                 productIcons.appendChild(icon);
             });
 
-            // Create a div to contain the buttons for adjusting quantity
+            // laver vores div som skal indholde vores plus og minus knapper som mængden af kager valgt
             const buttonsDiv = document.createElement("div");
 
-            // Create the minus button
+            // laver minus knap
             const minusButton = document.createElement("button");
             minusButton.type = "button";
             minusButton.classList.add("produkt-minus-button");
             minusButton.textContent = "-";
+            // giver minus knappen en funktion som tager fat i vores output
             minusButton.onclick = function() {
+                // laver funktion adjustValue og tilføjer 2 arguments
+                // bruger this.parentNode finder et element med class output som er et child af den klikkede minus knap
+                // og -1 til at ændre værdien af output
                 adjustValue(this.parentNode.querySelector(".output"), -1);
             };
 
-            // Create the input element to display the current quantity
+            // laver elementet for mængden af kager valgt bliver tilføget
             const outputInput = document.createElement("input");
             outputInput.type = "text";
             outputInput.classList.add("output", "produkt-button-value");
             outputInput.value = "0";
+            // lavet til en readOnly så man ikke kan skrive en værdi men skal bruge knapperne
             outputInput.readOnly = true;
 
-            // Create the plus button
+            // laver plus knappen, som er det samme som minus knappen bare at den ændre value til +1 istedet for -1
             const plusButton = document.createElement("button");
             plusButton.type = "button";
             plusButton.classList.add("produkt-plus-button");
@@ -84,149 +90,163 @@ fetch(url)
                 adjustValue(this.parentNode.querySelector(".output"), 1);
             };
 
-            // Append the buttons and input to the buttonsDiv
+            // appender knapper og input til at være i deres respektive div
             buttonsDiv.appendChild(minusButton);
             buttonsDiv.appendChild(outputInput);
             buttonsDiv.appendChild(plusButton);
 
-            // Create the add button
+            // laver tilføj knap og giver den en funktion på onclick 
             const addButton = document.createElement("button");
             addButton.type = "button";
             addButton.classList.add("tilfojButton", "produkt-tilfoj-knap");
             addButton.textContent = "TILFØJ";
+            // starter 2 funktioner, displayValue og UpdateTotalQuantity
             addButton.onclick = function() {
                 displayValue(this.parentNode.querySelector(".output"), this);
                 updateTotalQuantity();
             };
 
-            // Append the elements to productInfo
+            // appender elementerne til informations div´en 
             productInfo.appendChild(productImage);
             productInfo.appendChild(productDescription);
             productInfo.appendChild(productIcons);
             productInfo.appendChild(buttonsDiv);
             productInfo.appendChild(addButton);
 
-            // Append the product name and info to the figure
+            // appender overskrift of information til figuren
             figure.appendChild(productName);
             figure.appendChild(productInfo);
 
-            // Append the figure to the parent element
+            // appender figuren til vores form
             parentElement.appendChild(figure);
         });
 
-        /**
-         * Adjusts the value in the specified output field by a given change amount.
-         * @param {HTMLElement} outputField - The output field element.
-         * @param {number} change - The amount to change the value by.
-         */
+
+        // laver funktion så at plus og minus knapper fungere som de skal, ved at tilføge eller fratage 1 fra current value
         function adjustValue(outputField, change) {
             let currentValue = parseInt(outputField.value);
             let newValue = currentValue + change;
 
-            // Ensure the value doesn't go below zero
+            // laver en if statment som gør at value ikke kan gå i minus
             if (newValue < 0) {
                 newValue = 0;
             }
 
-            // Update the output field with the new value
+            // opdatere output/input til at være en ny value
+        
             outputField.value = newValue;
         }
 
     })
     .catch(error => {
-        // Log any errors that occur during fetch
+        // catch tager fat hvis der eventuelt er fejl i vores fetch, også console logger den Error
         console.error("Error:", error);
     });
 
-/**
- * Displays the value in the output field in the order list.
- * @param {HTMLElement} outputField - The output field element.
- * @param {HTMLElement} addButton - The add button element.
- */
+
+// laver en function som hedder display value, som går ind og tager outputField og addButton som 
+// argumenter. så at vores tilføj knap og den value vi har fra outputfield bliver brugt
 function displayValue(outputField, addButton) {
+    // bruger parseInt til at ændre vores tekst string til et nummer
     let currentValue = parseInt(outputField.value);
 
-    // Ensure the quantity is greater than zero
+    // laver et if statment til at sikre at den valgte value er over 0
     if (currentValue > 0) {
-        // Get the product name
+        // tager fat i produktets navn og tager dens text.content
         let productName = addButton.parentNode.parentNode.querySelector(".produkt-overskrift").textContent;
 
-        // Create an input element for the order list
+        // laver et input element til vores orderList,
         let listItem = document.createElement("input");
         listItem.value = `${currentValue}x ${productName}`;
         listItem.classList.add("koeb-liste");
         listItem.readOnly = true;
         listItem.name = "Kager";
 
-        // Create a button to delete the item from the list
+        // laver en knap som gør det muligt at fjerne den valgte kage.
         let deleteItem = document.createElement("button");
         deleteItem.textContent = "Fjern";
         deleteItem.classList.add("removeButton");
 
-        // Select the display area for the order list
+        // tager fat i displayArea så at vi kan apend elementerne i den
         let displayArea = document.querySelector(".displayArea");
 
-        // Append the delete button and list item to the display area
+        // appender elementerne til displayArea
         displayArea.appendChild(deleteItem);
         displayArea.appendChild(listItem);
 
-        // Event listener to handle removal of the list item
+        // laver en eventListener som gør det muligt at fjerne elemeneterne fra displayArea
         deleteItem.addEventListener("click", function() {
             displayArea.removeChild(listItem);
             displayArea.removeChild(deleteItem);
             updateTotalQuantity();
         });
 
-        // Reset the output field value after adding to the list
+        // sætter output value til 0 efter man har trykket tilføg
         outputField.value = 0;
 
-        // Update the add button appearance and text
+        // ændre farven på tilføg knappen og ændre teksten til tilføjet
         addButton.style.backgroundColor = "#2D65B6";
         addButton.style.color = "#FFFFFF";
         addButton.textContent = "TILFØJET";
 
-        // Update total quantity
+        // opdatere den totale mængde af kager
         updateTotalQuantity();
+        // kalder på en funktion som resetter farven på knappen
+        setTimeout(function() {
+            resetAddButton();
+        }, 3000);
+        
+
     } else {
-        // Alert the user to select at least one cake
+        // laver et else statement som går ind og siger du skal vægle mindst en kage hvis du bare trykker tilføg
         alert("Vælg venligst mindst 1 kage");
+    }
+    // laver function til at resætte farve og tekst tilbage til start
+    function resetAddButton() {
+        addButton.style.backgroundColor = "#E7F1FF";
+        addButton.style.color = "#000000";
+        addButton.textContent = "TILFØJ";
     }
 }
 
-/**
- * Calculates and logs the total quantity of cakes selected.
- */
+// her laver vi en funktion som udregner hvor mange kager som brugeren har valgt
 const totalPriceElement = document.querySelector(".total-pris");
 function updateTotalQuantity() {
     const orderListItems = document.querySelectorAll(".koeb-liste");
     let totalQuantity = 0;
 
-    // Calculate total quantity
+    // bruger et forEach loop, som går igennem hver input som har en text string af antal kager i Orderlisten
     orderListItems.forEach(orderItem => {
-        const quantityText = orderItem.value.split("x")[0].trim(); // Extract quantity from input value
+        // tager textstringen og fjerne x fra orderItem.Value hvorefter vi tager den første String og trimmer den 
+        const quantityText = orderItem.value.split("x")[0].trim(); 
+        // herefter tager vi denne textstring og ændre til et nummer med ParseInt
         const quantity = parseInt(quantityText);
-        if (!isNaN(quantity)) { // Check if extracted quantity is a valid number
+        // laver en if statment som sikre at vores string er blevet til et tal 
+        if (!isNaN(quantity)) { 
             totalQuantity += quantity;
         }
     });
-
+// laver nogle constanter til priserne på deres kager og en let til den totale pris
     const priceForFour = 188;
     const priceForSix = 280;
-    const priceForOne = 48;
     let totalPrice = 0;
-    
+// laver en if statement som siger hvis totalQuantity er 1 så mangler de 3 kager 
+// dette bliver displayed hvor der normalt hvil stå den totale pris af deres valgte kager
     if (totalQuantity === 1) {
         totalPrice = priceForOne;
         totalPriceElement.value = `Du mangler 3 kager`;
+        // laver en else if som siger du manger 2 tager
     } else if (totalQuantity === 2){
         totalPrice = priceForOne * 2;
         totalPriceElement.value = `Du mangler 2 kager`;
     } else if (totalQuantity === 3){  
         totalPrice = priceForOne * 3;
         totalPriceElement.value = `Du mangler 1 kage`;
+        // laver en else if statement som går ind og tager alle ulige tal, og ændre value til et ulige antal kager
     }else if (totalQuantity % 2 !== 0) {
         totalPriceElement.value = `ulige antal kager`;
         console.log(totalPriceElement.value);
+        // når man så rammer 4 kager kommer den første pris som er PriceForFour, herefter forsætter de andre else if statements med det samme
     }  else if (totalQuantity === 4) {
         totalPrice = priceForFour;
         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
@@ -256,28 +276,29 @@ function updateTotalQuantity() {
         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
     } 
     
-   
+   console.log(totalQuantity)
 
     console.log("Total pris:", totalPrice);
 }
 
 
 
-// Function to handle form submission
+// laver en funktion som kan tage fat i vores bestillings formular
 function handleFormSubmit(event) {
-    event.preventDefault(); // Prevent default form submission
-    const totalQuantity = parseInt(totalPriceElement.value.split(":")[1].trim());
-
+    // preventDefault går ind og sikre at formularen ikke kan blive sendt før denne funktion er gået igennem
+    event.preventDefault(); 
+  
+// laver if else statments til at sikre at brugeren køber mindst 4 kager og max 20
     if (totalQuantity < 4) {
         alert("Vælg venligst mindst 4 kager.");
     } else if (totalQuantity > 20) {
         alert("Du kan maksimalt vælge 20 kager.");
     } else {
-        // If validation passes, submit the form
+        // hvis de ligger mellem 4-20 kager sender den formularen
         event.target.submit();
     }
 }
-// Add event listener to form submission
+// tager fat i vores form, og adder eventlistener
 const form = document.querySelector(".form");
 form.addEventListener("submit", handleFormSubmit);
 
