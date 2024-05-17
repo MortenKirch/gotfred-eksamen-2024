@@ -547,14 +547,15 @@ h2#catering {
 
 
 .text-container {
-  max-width: 600px; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center the text container */
-  text-align: center; /* Center the text */
+  max-width: 600px; 
+  margin: 0 auto; 
+  text-align: center; 
+  padding: 30px;
 }
 
 .text-container p {
-  line-height: 1.4; /* Adjust the line height for compact text */
-  margin-bottom: 10px; /* Reduce space below the paragraph */
+  line-height: 1.4; 
+  margin-bottom: 10px; 
 }
 
 .skriv-button {
