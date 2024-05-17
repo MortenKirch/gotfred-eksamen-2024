@@ -515,9 +515,6 @@ img.gul-image{
   color: #333;
 }
 
-#bestil {
-  font-weight: 300;
-}
 
 .text-container {
   max-width: 600px; /* Adjust the max-width as needed */
@@ -553,8 +550,10 @@ img.gul-image{
 
 }
 
-#bestil{
+h2#bestil {
   font-weight: 300;
+  padding: 30px;
+
 }
 
 .formular-section {
