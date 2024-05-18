@@ -229,6 +229,7 @@ function updateTotalQuantity() {
 // laver nogle constanter til priserne på deres kager og en let til den totale pris
     const priceForFour = 188;
     const priceForSix = 280;
+    const priceForOne = 48; 
     let totalPrice = 0;
 // laver en if statement som siger hvis totalQuantity er 1 så mangler de 3 kager 
 // dette bliver displayed hvor der normalt hvil stå den totale pris af deres valgte kager

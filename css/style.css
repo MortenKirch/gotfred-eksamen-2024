@@ -38,63 +38,7 @@ h2{
    text-align: center;
    font-weight: var(--light);
 }
-/* style af header/nav */
-.container {
-  max-width: 1120px;
-  margin-inline: 1.5rem;
-  }
-  
-  .nav-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--lightblue);
-  }
-  
-  .nav {
-    height: 3.5rem;
-  }
-  
-  .nav-burger, 
-  .nav-close {
-    color: var(--blue);
-  }
-  
-  .nav-logo-container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-logo img {
-      height: 3rem;
-  }
-  
-  .nav-toggle {
-    position: relative;
-    width: 32px;
-    height: 32px;
-  }
-  
-  .nav-burger, 
-  .nav-close {
-    position: absolute;
-    width: max-content;
-    height: max-content;
-    inset: 0;
-    margin: auto;
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: opacity .1s, transform .4s;
-  }
-  
-  .nav-close {
-    opacity: 0;
-  }
-  
- 
+
 /* style af forside */
 
 
@@ -227,9 +171,7 @@ h2{
   padding: 1.5rem;
   text-align: center;
 }
-.forside-bog-text h2,p,a {
-  padding-bottom: 3rem;
-}
+
 .forside-bog-text p {
   color: var(--offblack);
   font-size: 1.2rem;
@@ -492,7 +434,7 @@ height: 450px;
    position: relative;  
    width: 300px;        
    height: 400px;       
- 
+
 }
 
 .total-pris {
@@ -525,7 +467,8 @@ height: 450px;
 }
 
 .storkage-image {
-  width: 50%;
+  width: 600px;
+ 
   height: auto;
 }
 
@@ -544,11 +487,11 @@ img.gul-image{
 
 }
 
-h2#catering {
+h1#catering {
   color: #2D65B6;
-  font-weight: 500;
+  font-weight: var(--medium);
   padding-bottom: 20px;
-  font-size: 3rem;
+  
 }
 
 
@@ -619,7 +562,7 @@ h2#bestil {
     text-align: center; /* Center the heading text */
 }
 
-form {
+.catering-form {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Create a two-column layout */
   gap: 20px; /* Add space between grid items */
@@ -683,11 +626,8 @@ label span {
 }
 
 input, textarea {
-  margin-bottom: 20px;
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%; 
 }
 
 button[type="submit"] {
@@ -701,7 +641,7 @@ button[type="submit"] {
   display: block;
   grid-column: span 2; 
   margin: 20px auto; 
-  margin-right: 226px; /* centrer button mere */
+ 
 }
 
 
@@ -713,31 +653,7 @@ button[type="submit"] {
 
 /* media query for desktop  */
 @media screen and (max-width: 1025px) {
-  /* navigation */
-  .container {
-    margin-inline: auto;
-  }
-
-  .nav {
-    height: 5.5rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .nav-list {
-    height: 100%;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .nav-link {
-    height: 100%;
-    padding: 0;
-    justify-content: initial;
-    column-gap: .25rem;
-  }
-  /* navigation slut */
+ 
   #myForm{
     grid-template-columns: 1fr 1fr;
  
@@ -770,8 +686,195 @@ button[type="submit"] {
       font-size: 1.5rem;
    }
 
-   /* navigation */
-   .nav-menu {
+   #catering{
+    font-size: 1.5rem;
+   }
+   .gul-text p {
+    font-size: 1rem;
+  }
+
+  #bestil{
+    font-size: 2rem;
+  }
+  .catering-form{
+    padding-left: 40px;
+  }
+  .gul-text {
+    width: 90%;
+ 
+  
+  }
+  .storkage-image{
+    width: 500px;
+  }
+
+}
+
+/* media query for mobile */
+@media screen and ( min-width: 414px ) and (max-width: 767px) {
+   #myForm{
+      grid-template-columns:1fr;
+    }
+    .produkt-formular-section{
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    .orderList{
+      justify-self: center;
+    }
+
+    .catering-form{
+      padding-left: 0px;
+    }
+    .gul-box{
+      flex-direction: column-reverse;
+    }
+    .gul-text{
+      width: 90%;
+    }
+    .catering-form{
+     display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        
+        gap: 0;
+    }
+    .extra-tekst{
+      padding-bottom: 10px;
+    }
+    .catering-formular-section{
+      display: flex;
+      justify-content: center;
+      text-align: start;
+    
+      
+    }
+    .storkage-image{
+      width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+/*=============== NAV ===============*/
+
+.container {
+max-width: 1120px;
+margin-inline: 1.5rem;
+} ul {
+    list-style: none;
+  }
+ a {
+    text-decoration: none;
+ }
+ h1{
+     text-align: center;
+     font-size: 2.5rem;
+     color: var(--blue);
+     font-family:'Montserrat', sans-serif;
+     font-weight: var(--light);
+ }
+ h2{
+    font-family:'Montserrat', sans-serif;
+    color: var(--blue);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: var(--light);
+ }
+
+/*=============== NAV ===============*/
+
+.container {
+max-width: 1120px;
+margin-inline: 1.5rem;
+}
+
+.nav-header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+background-color: var(--lightblue);
+}
+
+.nav {
+  height: 3.5rem;
+}
+
+.nav-burger, 
+.nav-close {
+  color: var(--blue);
+}
+
+.nav-logo-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+    height: 3rem;
+}
+
+.nav-toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav-burger, 
+.nav-close {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+}
+
+.nav-close {
+  opacity: 0;
+}
+
+/* For store skærme */
+@media screen and (min-width: 1025px) {
+    .container {
+      margin-inline: auto;
+    }
+  
+    .nav {
+      height: 5.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .nav-list {
+      height: 100%;
+      display: flex;
+      column-gap: 3rem;
+    }
+    .nav-link {
+      height: 100%;
+      padding: 0;
+      justify-content: initial;
+      column-gap: .25rem;
+    }
+  }
+
+/* Nav for mobil */
+@media screen and (max-width: 1024px) {
+  .nav-menu {
     position: absolute;
     left: 0;
     top: 2.5rem;
@@ -789,28 +892,95 @@ button[type="submit"] {
   .nav-logo img {
     height: 2.5rem;
   }
-   /* navigation slut */
 }
 
-/* media query for mobile */
-@media screen and ( min-width: 414px ) and (max-width: 767px) {
-   #myForm{
-      grid-template-columns:1fr;
-    }
-    .produkt-formular-section{
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-    .orderList{
-      justify-self: center;
-    }
-  
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+
+.nav-link {
+  color: var(--offblack);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Css til at vise menu. Se javascript */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/* css til at vise ikoner. Se javascript */
+.show-icon .nav-burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav-close {
+  opacity: 1;
+  transform: rotate(90deg);
 }
 
 
 
 
-/* For store skærme
+
+
+
+.nav-header {
+position: sticky;
+top: 0;
+left: 0;
+width: 100%;
+background-color: var(--lightblue);
+}
+
+.nav {
+height: 3.5rem;
+}
+
+.nav-burger, 
+.nav-close {
+color: var(--blue);
+}
+
+.nav-logo-container {
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-logo img {
+  height: 3rem;
+}
+
+.nav-toggle {
+position: relative;
+width: 32px;
+height: 32px;
+}
+
+.nav-burger, 
+.nav-close {
+position: absolute;
+width: max-content;
+height: max-content;
+inset: 0;
+margin: auto;
+font-size: 1.25rem;
+cursor: pointer;
+transition: opacity .1s, transform .4s;
+}
+
+.nav-close {
+opacity: 0;
+}
+
+/* For store skærme */
 @media screen and (min-width: 1025px) {
   .container {
     margin-inline: auto;
@@ -837,7 +1007,7 @@ button[type="submit"] {
   }
 }
 
-Nav for mobil
+/* Nav for mobil */
 @media screen and (max-width: 1024px) {
 .nav-menu {
   position: absolute;
@@ -859,37 +1029,37 @@ Nav for mobil
 }
 }
 
-*/
-
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 
-
-/* Navigation javascript */
-  .nav-link {
-  color: var(--offblack);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-link {
+color: var(--offblack);
+padding: 1.25rem 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 /* Css til at vise menu. Se javascript */
 .show-menu {
-  opacity: 1;
-  top: 3.5rem;
-  pointer-events: initial;
+opacity: 1;
+top: 3.5rem;
+pointer-events: initial;
 }
 
 /* css til at vise ikoner. Se javascript */
 .show-icon .nav-burger {
-  opacity: 0;
-  transform: rotate(90deg);
+opacity: 0;
+transform: rotate(90deg);
 }
 .show-icon .nav-close {
-  opacity: 1;
-  transform: rotate(90deg);
+opacity: 1;
+transform: rotate(90deg);
 }
-/* Navigation javascript slut */
+
+
+
+
+
