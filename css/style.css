@@ -957,7 +957,6 @@ button[type="submit"] {
 }
 
 
-<<<<<<< HEAD
 
 
 
@@ -969,8 +968,6 @@ button[type="submit"] {
 
 
 
-=======
->>>>>>> 6bd85f92d75952c3c8f7a6ceeb5c7c08ca460bc6
 /*=============== NAV ===============*/
 .container {
   max-width: 1120px;
@@ -1082,7 +1079,6 @@ button[type="submit"] {
 }
 
 
-<<<<<<< HEAD
 .nav-link {
   color: var(--offblack);
   padding: 1.25rem 1.5rem;
@@ -1235,8 +1231,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-=======
->>>>>>> 6bd85f92d75952c3c8f7a6ceeb5c7c08ca460bc6
 /* Css til at vise menu. Se javascript */
 .show-menu {
 opacity: 1;
