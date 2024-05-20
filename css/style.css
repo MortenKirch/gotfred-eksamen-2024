@@ -6,8 +6,8 @@
    --beige: #E8E7E4;
    --offblack: #111111; 
    --offwhite: #F8F9FA;
-   --regular: 400;
    --light: 300;
+   --regular: 400;
    --medium: 500;
 }
 
@@ -216,12 +216,15 @@ h2{
 .container-beige-4{
 width: 150px;
 height: 150px;
-background-color: var(--yellow);
+background-color: var(--beige);
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 gap: 10px;
+border-radius: 10px;
+padding: 10px;
+margin-bottom: 15px;
 
 
 }
@@ -234,14 +237,27 @@ gap: 10px;
 .container-beige-6{
    width: 225px;
    height: 150px;
-   background-color: var(--yellow);
+   background-color: var(--beige);
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    gap: 10px;
+   border-radius: 10px;
+   padding: 10px;
+   margin-bottom: 15px;
  
 }
+
+.forudbestil-kager-h2 {
+  font-family:'Montserrat', sans-serif;
+  font-weight: var(--medium);
+  font-size: 1.8rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+
 #myForm{
    display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -262,9 +278,10 @@ margin-bottom: 2rem;
    text-align: center;
    color: var(--offblack);
    font-weight: var(--light);
+   margin: 30px 0px 20px 0px;
 }
 .produkt-information{
-   border: 1px solid var(--offblack);
+   border: 0.25px solid var(--offblack);
    border-radius: 20px;
    display: flex;
    flex-direction: column;
@@ -279,16 +296,25 @@ height: auto;
 .produkt-ikoner{
    display: flex;
    justify-content: center;
-   margin-bottom: 1rem;
+   margin-bottom: 1.4rem;
 
 }
 .produkt-ikoner img{
-width: 20%;
+width: 18%;
 height: auto;
-
+margin: 0 4px;
 }
+
 .produkt-p{
       font-family:'Montserrat', sans-serif;
+      color: var(--offblack);
+      font-weight: 300;
+      font-size: 0.9rem;
+      padding: 20px 0px;
+      width: 98%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.5rem;
    
 }
 
@@ -323,6 +349,7 @@ margin-bottom:0.25rem;
    margin: 0.25rem;
    color: var(--blue);
    background-color: var(--lightblue);
+   margin: 20px 0px;
 }
 
 .produkt-formular{
@@ -336,8 +363,8 @@ margin-bottom:0.25rem;
 }
 .bestilling-overskrift{
    font-weight: var(--medium);
-   font-size: 2.2rem;
-   margin: 4rem;
+   font-size: 1.8rem;
+   margin-top: 4rem;
    color: var(--blue);
    font-family:'Montserrat', sans-serif;
 }
@@ -349,6 +376,7 @@ margin-bottom:0.25rem;
    grid-template-columns: 1fr 1fr;
    margin: auto;
    border-radius: 15px;
+   margin-bottom: 50px;
 
 }
 .formular-email{
@@ -406,7 +434,7 @@ margin-top: 3rem;
    border-radius: 20px;
    background-color: var(--blue);
    color: var(--offwhite);
-   margin: 0.5rem; 
+   margin: 20px 0px; 
 }
 .koeb-liste{
    color: var(--offblack);
@@ -654,6 +682,8 @@ button[type="submit"] {
 
 .vis-mis-val {
   display: flex;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .vmv {
@@ -662,12 +692,17 @@ button[type="submit"] {
   border: none;
 }
 
-.vmv h1 {
+.vmv h2 {
+  font-family:'Montserrat', sans-serif;
   color: var(--blue);
-  padding-bottom: 30px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .vmv p {
+  font-size: 1rem;
   color: var(--offblack);
   margin: 0px 20px 0px 20px;
   line-height: 2rem ;
@@ -676,13 +711,13 @@ button[type="submit"] {
 
 /* vores rejse */
 
-.vores-rejse-h1 {
+.vores-rejse-h2 {
   padding-top: 100px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .vores-rejse {
-  background-color: var(--yellow);
+  background-color: var(--beige);
   height: 400px;
   display: flex;
   align-items: center;
@@ -700,12 +735,13 @@ button[type="submit"] {
 }
 
 .vores-rejse-content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 2rem;
   margin: 10px 10px 10px 90px;
   max-width: 700px;
   color: var(--offblack);
   text-align: left;
+  font-weight: 400;
 }
 
 
@@ -713,11 +749,13 @@ button[type="submit"] {
 /* den daglige drift */
 
 .drift-h1 {
+  font-size: 1.8rem;
   padding-top: 100px;
   padding-bottom: 30px;
 }
 
 .drift-p {
+  font-size: 1rem;
   display: flex;  
   text-align: center;
   color: var(--offblack);
@@ -737,6 +775,7 @@ button[type="submit"] {
   align-items: center;
   margin-left: 25%;
   position: absolute;
+  z-index: 1;
 }
 
 .drift-bg {
@@ -752,6 +791,7 @@ button[type="submit"] {
   line-height: 2rem;
   padding-bottom: 30px;
   padding-top: 50px;
+  font-size: 1rem;
 }
 
 .drift2-img-container {
@@ -762,7 +802,7 @@ button[type="submit"] {
 }
 
 .drift2-img-container img {
-  margin: 0 20px; 
+  margin: 0 25px; 
   width: 20%;
   padding-top: 60px;
 }
@@ -862,8 +902,19 @@ h3 {
   background-color: #F8EEB7;
   padding: 20px;
   border-radius: 10px;
-  max-width: 600px;
+  width: 850px;
+  height: 380px;
   margin: 0 auto;
+}
+
+
+#message {
+  height: 100px;
+  border-color: none;
+}
+
+#name, #email, #message {
+  border-color: white;
 }
 
 .kontaktosform-section h3 {
@@ -896,6 +947,8 @@ input, textarea {
 
 .faq {
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .faq h2{
@@ -905,6 +958,11 @@ input, textarea {
 }
 
 .faq-item {
+  background-color: var(--beige);
+  width: 92%;
+  margin: 0 auto;
+  padding: 10px 0px;
+  border-radius: 50px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -1063,6 +1121,7 @@ input, textarea {
   color: var(--offblack);
   padding: 1.25rem 1.5rem;
   display: flex;
+  font-weight: 400;
   justify-content: center;
   align-items: center;
 }
