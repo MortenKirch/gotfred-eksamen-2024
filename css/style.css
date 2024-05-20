@@ -1081,10 +1081,10 @@ opacity: 0;
 }
 
 .vores-rejse-content p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 2rem;
-  margin: 10px 10px 10px 125px;
-  max-width: 600px;
+  margin: 10px 10px 10px 90px;
+  max-width: 700px;
   color: var(--offblack);
   text-align: left;
 }
@@ -1099,10 +1099,13 @@ opacity: 0;
 }
 
 .drift-p {
+  display: flex;  
   text-align: center;
   color: var(--offblack);
   line-height: 2rem;
   padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .drift-container {
@@ -1128,8 +1131,8 @@ opacity: 0;
   text-align: center;
   color: var(--offblack);
   line-height: 2rem;
-  padding-bottom: 50px;
-  padding-top: 100px;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
 
 .drift2-img-container {
