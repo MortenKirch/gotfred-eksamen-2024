@@ -649,6 +649,131 @@ button[type="submit"] {
 
 /* style af om gotfred */
 
+
+/* vision, mission, værdier */
+
+.vis-mis-val {
+  display: flex;
+}
+
+.vmv {
+  flex: 1;
+  padding: 20px;
+  border: none;
+}
+
+.vmv h1 {
+  color: var(--blue);
+  padding-bottom: 30px;
+}
+
+.vmv p {
+  color: var(--offblack);
+  margin: 0px 20px 0px 20px;
+  line-height: 2rem ;
+}
+
+
+/* vores rejse */
+
+.vores-rejse-h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.vores-rejse {
+  background-color: var(--yellow);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.vores-rejse img {
+  max-height: 400px;
+  margin-left: 150px;
+}
+
+.vores-rejse-content {
+  flex: 1;
+}
+
+.vores-rejse-content p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 10px 10px 10px 90px;
+  max-width: 700px;
+  color: var(--offblack);
+  text-align: left;
+}
+
+
+
+/* den daglige drift */
+
+.drift-h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.drift-p {
+  display: flex;  
+  text-align: center;
+  color: var(--offblack);
+  line-height: 2rem;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.drift-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drift-img {
+  align-items: center;
+  margin-left: 25%;
+  position: absolute;
+}
+
+.drift-bg {
+  width: 100%;
+}
+
+
+
+.drift-p2 {
+  padding-top: 50px;
+  text-align: center;
+  color: var(--offblack);
+  line-height: 2rem;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.drift2-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.drift2-img-container img {
+  margin: 0 20px; 
+  width: 20%;
+  padding-top: 60px;
+}
+
+.drift2-bg {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+
+
 /* style af kontakt */
 
 .kontakt-kontainer {
@@ -764,7 +889,7 @@ input, textarea {
   text-align: center;
 }
 
-.faq h2 {
+.faq h2{
   color: #3166b3;
   font-weight: 300;
   margin-bottom: 20px;
@@ -898,6 +1023,17 @@ input, textarea {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*=============== NAV ===============*/
 .container {
   max-width: 1120px;
@@ -1009,6 +1145,158 @@ input, textarea {
 }
 
 
+.nav-link {
+  color: var(--offblack);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Css til at vise menu. Se javascript */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/* css til at vise ikoner. Se javascript */
+.show-icon .nav-burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+.nav-header {
+position: sticky;
+top: 0;
+left: 0;
+width: 100%;
+background-color: var(--lightblue);
+}
+
+.nav {
+height: 3.5rem;
+}
+
+.nav-burger, 
+.nav-close {
+color: var(--blue);
+}
+
+.nav-logo-container {
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-logo img {
+  height: 3rem;
+}
+
+.nav-toggle {
+position: relative;
+width: 32px;
+height: 32px;
+}
+
+.nav-burger, 
+.nav-close {
+position: absolute;
+width: max-content;
+height: max-content;
+inset: 0;
+margin: auto;
+font-size: 1.25rem;
+cursor: pointer;
+transition: opacity .1s, transform .4s;
+}
+
+.nav-close {
+opacity: 0;
+}
+
+/* For store skærme */
+@media screen and (min-width: 1025px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .nav {
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav-link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: .25rem;
+  }
+}
+
+/* Nav for mobil */
+@media screen and (max-width: 1024px) {
+.nav-menu {
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  width: 100%;
+  height: calc(100vh - 3.5rem);
+  overflow: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: top .4s, opacity .3s;
+}
+.nav-list {
+  background-color: var(--lightblue);
+  padding-top: 1rem;
+}
+.nav-logo img {
+  height: 2.5rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
+
+.nav-link {
+color: var(--offblack);
+padding: 1.25rem 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 /* Css til at vise menu. Se javascript */
 .show-menu {
 opacity: 1;
