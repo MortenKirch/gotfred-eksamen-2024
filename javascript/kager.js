@@ -1,8 +1,10 @@
-
 const parentElement = document.getElementById("myForm");
 
 // Url til vores json fil
 const url = "../json/kager.json";
+
+// Global variable to track total quantity
+let totalQuantity = 0;
 
 // Fetch JSON data
 fetch(url)
@@ -122,7 +124,7 @@ fetch(url)
         });
 
 
-        // laver funktion så at plus og minus knapper fungere som de skal, ved at tilføge eller fratage 1 fra current value
+        // laver funktion så at plus og minus knapper fungere som de skal, ved at tilføje eller fratage 1 fra current value
         function adjustValue(outputField, change) {
             let currentValue = parseInt(outputField.value);
             let newValue = currentValue + change;
@@ -133,7 +135,6 @@ fetch(url)
             }
 
             // opdatere output/input til at være en ny value
-        
             outputField.value = newValue;
         }
 
@@ -213,42 +214,37 @@ function displayValue(outputField, addButton) {
 const totalPriceElement = document.querySelector(".total-pris");
 function updateTotalQuantity() {
     const orderListItems = document.querySelectorAll(".koeb-liste");
-    let totalQuantity = 0;
+    totalQuantity = 0;
 
-    // bruger et forEach loop, som går igennem hver input som har en text string af antal kager i Orderlisten
+    // bruger et forEach loop, som går igennem hver input som har class koeb-liste
     orderListItems.forEach(orderItem => {
-        // tager textstringen og fjerne x fra orderItem.Value hvorefter vi tager den første String og trimmer den 
         const quantityText = orderItem.value.split("x")[0].trim(); 
-        // herefter tager vi denne textstring og ændre til et nummer med ParseInt
         const quantity = parseInt(quantityText);
-        // laver en if statment som sikre at vores string er blevet til et tal 
         if (!isNaN(quantity)) { 
             totalQuantity += quantity;
         }
     });
-// laver nogle constanter til priserne på deres kager og en let til den totale pris
+
+    // definerer vores forskellige priser 
     const priceForFour = 188;
     const priceForSix = 280;
     const priceForOne = 48; 
     let totalPrice = 0;
-// laver en if statement som siger hvis totalQuantity er 1 så mangler de 3 kager 
-// dette bliver displayed hvor der normalt hvil stå den totale pris af deres valgte kager
+
+    // if statement for at udregne prisen alt efter hvor mange kager brugeren har valgt 
     if (totalQuantity === 1) {
         totalPrice = priceForOne;
         totalPriceElement.value = `Du mangler 3 kager`;
-        // laver en else if som siger du manger 2 tager
     } else if (totalQuantity === 2){
         totalPrice = priceForOne * 2;
         totalPriceElement.value = `Du mangler 2 kager`;
     } else if (totalQuantity === 3){  
         totalPrice = priceForOne * 3;
         totalPriceElement.value = `Du mangler 1 kage`;
-        // laver en else if statement som går ind og tager alle ulige tal, og ændre value til et ulige antal kager
-    }else if (totalQuantity % 2 !== 0) {
+    } else if (totalQuantity % 2 !== 0) {
         totalPriceElement.value = `ulige antal kager`;
         console.log(totalPriceElement.value);
-        // når man så rammer 4 kager kommer den første pris som er PriceForFour, herefter forsætter de andre else if statements med det samme
-    }  else if (totalQuantity === 4) {
+    } else if (totalQuantity === 4) {
         totalPrice = priceForFour;
         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
     } else if (totalQuantity === 6) {
@@ -277,30 +273,24 @@ function updateTotalQuantity() {
         totalPriceElement.value = `Total pris: ${totalPrice} DKK`;
     } 
     
-   console.log(totalQuantity)
-
+    console.log(totalQuantity);
     console.log("Total pris:", totalPrice);
 }
 
-
-
-// laver en funktion som kan tage fat i vores bestillings formular
+// en funktion som submitter vores form, men kun efter at have tjekket at antallet af kager er
+// over 4 og under 20
 function handleFormSubmit(event) {
-    // preventDefault går ind og sikre at formularen ikke kan blive sendt før denne funktion er gået igennem
     event.preventDefault(); 
-  
-// laver if else statments til at sikre at brugeren køber mindst 4 kager og max 20
+
     if (totalQuantity < 4) {
         alert("Vælg venligst mindst 4 kager.");
     } else if (totalQuantity > 20) {
         alert("Du kan maksimalt vælge 20 kager.");
     } else {
-        // hvis de ligger mellem 4-20 kager sender den formularen
         event.target.submit();
     }
 }
-// tager fat i vores form, og adder eventlistener
+
+// laver en eventlistener til at kalde handleFormSubmit
 const form = document.querySelector(".form");
 form.addEventListener("submit", handleFormSubmit);
-
-
