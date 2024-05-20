@@ -505,6 +505,7 @@ h1#catering {
   margin: 0 auto; 
   text-align: center; 
   padding: 30px;
+  margin-top: 70px;
 }
 
 .text-container p {
@@ -956,6 +957,7 @@ button[type="submit"] {
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -967,49 +969,27 @@ button[type="submit"] {
 
 
 
+=======
+>>>>>>> 6bd85f92d75952c3c8f7a6ceeb5c7c08ca460bc6
 /*=============== NAV ===============*/
-
 .container {
-max-width: 1120px;
-margin-inline: 1.5rem;
-} ul {
-    list-style: none;
-  }
- a {
-    text-decoration: none;
- }
- h1{
-     text-align: center;
-     font-size: 2.5rem;
-     color: var(--blue);
-     font-family:'Montserrat', sans-serif;
-     font-weight: var(--light);
- }
- h2{
-    font-family:'Montserrat', sans-serif;
-    color: var(--blue);
-    font-size: 2rem;
-    text-align: center;
-    font-weight: var(--light);
- }
-
-/*=============== NAV ===============*/
-
-.container {
-max-width: 1120px;
-margin-inline: 1.5rem;
+  max-width: 1120px;
+  margin-inline: 1.5rem;
 }
 
 .nav-header {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-background-color: var(--lightblue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--lightblue);
 }
-
-.nav {
-  height: 3.5rem;
+.nav-link {
+  color: var(--offblack);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-burger, 
@@ -1050,6 +1030,7 @@ background-color: var(--lightblue);
   opacity: 0;
 }
 
+
 /* For store skærme */
 @media screen and (min-width: 1025px) {
     .container {
@@ -1077,6 +1058,7 @@ background-color: var(--lightblue);
     }
   }
 
+
 /* Nav for mobil */
 @media screen and (max-width: 1024px) {
   .nav-menu {
@@ -1099,12 +1081,8 @@ background-color: var(--lightblue);
   }
 }
 
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 
+<<<<<<< HEAD
 .nav-link {
   color: var(--offblack);
   padding: 1.25rem 1.5rem;
@@ -1257,6 +1235,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+=======
+>>>>>>> 6bd85f92d75952c3c8f7a6ceeb5c7c08ca460bc6
 /* Css til at vise menu. Se javascript */
 .show-menu {
 opacity: 1;
