@@ -24,28 +24,25 @@
     <script type="module" src="/javascript/script.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-        <a href="../index.html">
-            <img class="logo" src="../pictures/logo/gotfred-logo.webp" alt="gotfred logo">
-        </a>
-        <ul class="main-nav" id="js-menu">
-          <li>
-            <a href="kager-og-bestilling.html" class="nav-links">kager & bestilling</a>
-          </li>
-          <li>
-            <a href="catering.html" class="nav-links">catering</a>
-          </li>
-          <li>
-            <a href="om-gotfred.html" class="nav-links">om gotfred</a>
-          </li>
-          <li>
-            <a href="kontakt.html" class="nav-links">kontakt</a>
-          </li>
-        </ul>
-      </nav>
+
+
+  <section class="kontakt-formular-section">
+
+    <h2 class="kontakt-h2">UDFYLD INFORMATIONER</h2>
+    <br>
+
+    <form class="kontakt-form">
+      <input type="text" id="name" name="name" placeholder="Navn" class="kontakt-formular-navn" required>
+      <br>
+      <input type="email" id="email" name="email" placeholder="E-mail" class="kontakt-formular-email" required>
+      <br>
+      <textarea id="comments" name="comments" placeholder="Skriv din besked her..." class="kontakt-formular-besked" required></textarea>
+      <button class="kontakt-button" type="submit">SEND</button>
+    </form>
+
+  </section>
+
+
 
       
 </body>
