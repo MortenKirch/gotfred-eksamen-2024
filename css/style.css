@@ -1029,6 +1029,133 @@ opacity: 0;
 }
 }
 
+
+
+/* vision, mission, værdier */
+
+.vis-mis-val {
+  display: flex;
+}
+
+.vmv {
+  flex: 1;
+  padding: 20px;
+  border: none;
+}
+
+.vmv h1 {
+  color: var(--blue);
+  padding-bottom: 30px;
+}
+
+.vmv p {
+  color: var(--offblack);
+  margin: 0px 30px 0px 30px;
+  line-height: 2rem ;
+}
+
+
+/* vores rejse */
+
+.vores-rejse-h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.vores-rejse {
+  background-color: var(--yellow);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.vores-rejse img {
+  max-height: 400px;
+  margin-left: 150px;
+}
+
+.vores-rejse-content {
+  flex: 1;
+}
+
+.vores-rejse-content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 10px 10px 10px 125px;
+  max-width: 600px;
+  color: var(--offblack);
+  text-align: left;
+}
+
+
+
+/* den daglige drift */
+
+.drift-h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.drift-p {
+  text-align: center;
+  color: var(--offblack);
+  line-height: 2rem;
+  padding-bottom: 30px;
+}
+
+.drift-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drift-img {
+  align-items: center;
+  margin-left: 25%;
+  position: absolute;
+}
+
+.drift-bg {
+  width: 100%;
+}
+
+
+
+.drift-p2 {
+  padding-top: 50px;
+  text-align: center;
+  color: var(--offblack);
+  line-height: 2rem;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.drift2-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.drift2-img-container img {
+  margin: 0 20px; /* Adjust margin between images */
+  width: 20%;
+  padding-top: 60px;
+}
+
+.drift2-bg {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
 /* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
