@@ -525,7 +525,8 @@ height: 450px;
 .storkage-image {
   width: auto;
   height: 35rem;
- 
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 img.gul-image{
