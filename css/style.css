@@ -881,9 +881,7 @@ button[type="submit"] {
   flex-direction: column;
   padding-left: 118px;
 }
-.maps-kontakt{
 
-}
 .info-item {
   display: flex;
   align-items: center;
@@ -1247,6 +1245,16 @@ input, textarea {
     .konkakt-container{
       flex-direction: column;
     }
+    .maps-kontakt{
+      width: 90vw;
+    }
+    .info-details{
+      padding-left: 0;
+    }
+    .konkakt-container{
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 
@@ -1273,6 +1281,7 @@ input, textarea {
   left: 0;
   width: 100%;
   background-color: var(--lightblue);
+  z-index: 1;
 }
 .nav-link {
   color: var(--offblack);
@@ -1293,7 +1302,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -8rem;
+
 }
 
 .nav-logo img {
@@ -1341,7 +1350,7 @@ input, textarea {
       height: 100%;
       display: flex;
       column-gap: 3rem;
-      margin-right: -8rem;
+      
     }
     .nav-link {
       height: 100%;
