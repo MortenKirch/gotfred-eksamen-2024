@@ -522,9 +522,10 @@ height: 450px;
 
 .storkage-image {
   width: auto;
-  height: 35rem;
+  height: 32rem;
   opacity: 1;
   transition: opacity 1s ease-in-out;
+  margin-left: 10vw;
 }
 
 img.gul-image{
@@ -1156,6 +1157,7 @@ input, textarea {
   }
   .storkage-image{
     width: 500px;
+    margin-left: 4vw;
   }
   .forside-header {
     height: 60vw;
@@ -1273,6 +1275,7 @@ input, textarea {
     .storkage-image{
       width: 400px;
       height: auto;
+      margin: auto;
     }
 
     .vores-rejse{
