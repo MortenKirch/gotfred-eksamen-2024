@@ -340,6 +340,7 @@ margin: 0 4px;
       margin: 0 auto;
       text-align: center;
       line-height: 1.5rem;
+      height: 120px;
    
 }
 
@@ -413,7 +414,9 @@ border-radius: 10px;
 margin: 0.5rem;
 padding-left: 10px;
 }
-
+.container-kagebox p{
+  text-align: center;
+}
 .formular-navn{
    height: 40px;
    width: 40vw;
@@ -834,7 +837,7 @@ button[type="submit"] {
  display: flex;
  justify-content: center;
  align-items: center;
- background-image: url(/pictures/pattern-yellow.webp);
+ background-image: url(/pictures/yellow-pattern.webp);
  background-repeat: no-repeat;
  background-size: cover;
  margin-bottom: 2rem;
