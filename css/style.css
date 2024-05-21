@@ -26,10 +26,11 @@ ul {
 }
 h1{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--blue);
+    font-weight: var(--medium);
     font-family:'Montserrat', sans-serif;
-    font-weight: var(--light);
+    margin: 70px 0px 20px 0px;
 }
 h2{
   font-family:'Montserrat', sans-serif;
@@ -201,6 +202,8 @@ h2{
    margin: auto;
    margin-top: 2rem;
    margin-bottom: 2rem;
+   color: var(--offblack);
+   font-weight: var(--regular);
   
    
 }
@@ -223,14 +226,14 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 10px;
-padding: 10px;
+padding: 15px;
 margin-bottom: 15px;
 
 
 }
 .container-blue-round{
-   width: 60px;
-   height: 60px;
+   width: 50px;
+   height: 50px;
    border-radius: 40px;
    background-color: var(--blue);
 }
@@ -244,7 +247,7 @@ margin-bottom: 15px;
    align-items: center;
    gap: 10px;
    border-radius: 10px;
-   padding: 10px;
+   padding: 15px;
    margin-bottom: 15px;
  
 }
@@ -274,15 +277,16 @@ margin-bottom: 2rem;
 
 }
 .produkt-overskrift{
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    text-align: center;
    color: var(--offblack);
    font-weight: var(--light);
    margin: 30px 0px 20px 0px;
+
 }
 .produkt-information{
    border: 0.25px solid var(--offblack);
-   border-radius: 20px;
+   border-radius: 15px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -292,6 +296,7 @@ margin-bottom: 2rem;
 .produkt-billede{
 max-width: 300px;
 height: auto;
+
 }
 .produkt-ikoner{
    display: flex;
@@ -367,6 +372,7 @@ margin-bottom:0.25rem;
    margin-top: 4rem;
    color: var(--blue);
    font-family:'Montserrat', sans-serif;
+   margin-bottom: 2rem;
 }
 .produkt-formular-section{
    width: 80vw;
