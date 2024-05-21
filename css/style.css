@@ -723,7 +723,7 @@ button[type="submit"] {
   flex: 1;
   padding: 20px;
   border: none;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .vmv h2 {
@@ -815,6 +815,7 @@ button[type="submit"] {
 .drift-img {
   align-items: center;
   display: flex;
+  padding: 40px 0px;
 
 }
 
@@ -839,13 +840,13 @@ button[type="submit"] {
  background-image: url(/pictures/yellow-pattern.webp);
  background-repeat: no-repeat;
  background-size: cover;
- margin-bottom: 2rem;
+ margin-bottom: 4rem;
 }
 
 .drift2-img-container img {
   margin: 0 25px; 
   width: 20%;
-  padding-top: 60px;
+  padding: 50px 0px;
 }
 
 .drift2-bg {
