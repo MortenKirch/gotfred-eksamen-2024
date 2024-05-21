@@ -116,7 +116,7 @@ h2{
   text-align: center;
   margin-top: 160px;
 }
-.bestil-section h1,a {
+.bestil-section h1 a {
   margin: 1rem;
   font-weight: var(--medium);
 }
@@ -1484,7 +1484,7 @@ input, textarea {
 
 /*=============== NAV ===============*/
 .container {
-  max-width: 1120px;
+  max-width: 1400px;
   margin-inline: 1.5rem;
 }
 
@@ -1528,6 +1528,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav-logo img {
