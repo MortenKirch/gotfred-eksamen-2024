@@ -860,6 +860,12 @@ button[type="submit"] {
   
 }
 
+.kontakt-h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: var(--medium);
+}
+
 .kontact-info {
   text-align: center;
   margin-bottom: 40px;
@@ -917,8 +923,9 @@ button[type="submit"] {
 
 #kontakt {
   color: var(--blue);
-  font-weight: 500;
+  font-weight: var(--medium);
   margin-bottom: 20px;
+  margin-top: 5rem;
 }
 
 h3 {
