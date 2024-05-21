@@ -65,7 +65,6 @@ h2{
 /* Sæsonkage baggrunds billede. */
 
 .forside-header {
-  margin-top: 5rem;
   display: flex;
   justify-content: flex-end;
   background-image: url(../pictures/forside-saesonkage.webp);
@@ -89,8 +88,8 @@ h2{
   width: 30.725rem;
   line-height: 1.9;
   padding: 1.7rem;
-  padding-top: 6rem;
-  font-size: 1.1rem;
+  padding-top: 8rem;
+  font-size: 1.6rem;
 }
 .gotfred-forside-picture img {
   height: 90vh;
@@ -525,7 +524,7 @@ height: 450px;
 .storkage-image {
   width: auto;
   height: 35rem;
-  margin-left: 10rem;
+ 
 }
 
 img.gul-image{
@@ -1199,6 +1198,7 @@ input, textarea {
     }
     .gul-box{
       flex-direction: column-reverse;
+      height: auto;
     }
     .gul-text{
       width: 90%;
@@ -1219,11 +1219,26 @@ input, textarea {
       justify-content: center;
       text-align: start;
     
-    
-      
+  
+    }
+    .catering-formular-navn{
+      width: 50vw;
+    }
+    .catering-formular-email{
+      width: 50vw;
+    }
+    .catering-formular-kagedetaljer{
+      width: 50vw;
+    }
+    .catering-formular-kommentar{
+      width: 50vw;
+    }
+    .catering-formular-anledning{
+      width: 50vw;
     }
     .storkage-image{
       width: 400px;
+      height: auto;
     }
 
     .vores-rejse{
@@ -1257,6 +1272,16 @@ input, textarea {
     .konkakt-container{
       flex-direction: column;
     }
+    .maps-kontakt{
+      width: 90vw;
+    }
+    .info-details{
+      padding-left: 0;
+    }
+    .konkakt-container{
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 
@@ -1283,6 +1308,7 @@ input, textarea {
   left: 0;
   width: 100%;
   background-color: var(--lightblue);
+  z-index: 1;
 }
 .nav-link {
   color: var(--offblack);
@@ -1303,7 +1329,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -8rem;
+
 }
 
 .nav-logo img {
@@ -1351,7 +1377,7 @@ input, textarea {
       height: 100%;
       display: flex;
       column-gap: 3rem;
-      margin-right: -8rem;
+      
     }
     .nav-link {
       height: 100%;
