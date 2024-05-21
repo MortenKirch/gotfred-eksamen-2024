@@ -131,7 +131,6 @@ h2{
   background-color: var(--offwhite);
   padding: 0.2rem 2rem;
   color: var(--blue);
-  font-weight: var(--light);
   border-radius: 20px;
   font-weight: var(--medium);
   
@@ -1175,16 +1174,49 @@ input, textarea {
     height: 4.5rem;
     font-size: 0.7rem;
   }
+/* om gotfred cafe */
+  .main-forside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+  }
 
-
-
+  .gotfred-forside-text {
+    width: 10.725rem;
+    padding-top: 2rem;
+    font-size: 0.7rem;
+  }
+  .gotfred-forside-picture img {
+    height: 50vh;
+  }
+/* forside bestil */
+  .forside-bestil {
+    max-width: 90%;
+    height: 100vh;
+  }
+  .bestil-section {
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 160px;
+  }
+  .bestil-section h1,a {
+    margin: 2rem;
+  }
+  .bestil-section h1 {
+    color: var(--blue);
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  #drinkImage {
+    width: 93%;
+  }
   .vores-rejse-content p{
     font-size: 12px;
     margin-left: 20px; 
     line-height: 20px; 
-  }
- 
-  
+  } 
 }
 
 /* media query for mobile */
@@ -1276,17 +1308,6 @@ input, textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*=============== NAV ===============*/
 .container {
   max-width: 1120px;
@@ -1301,6 +1322,7 @@ input, textarea {
   background-color: var(--lightblue);
   z-index: 1;
 }
+
 .nav-link {
   color: var(--offblack);
   padding: 1.25rem 1.5rem;
@@ -1310,27 +1332,8 @@ input, textarea {
   align-items: center;
 }
 
-.nav-burger, 
-.nav-close {
-  color: var(--blue);
-}
-
-.nav-logo-container {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.nav-logo img {
-    height: 3rem;
-}
-
-.nav-toggle {
-  position: relative;
-  width: 32px;
-  height: 32px;
+.nav {
+  height: 3.5rem;
 }
 
 .nav-burger, 
@@ -1343,11 +1346,30 @@ input, textarea {
   font-size: 1.25rem;
   cursor: pointer;
   transition: opacity .1s, transform .4s;
+  color: var(--blue);
+}
+
+.nav-logo-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 3rem;
+}
+
+.nav-toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
 }
 
 .nav-close {
   opacity: 0;
 }
+
 
 
 /* For store skærme */
@@ -1380,10 +1402,9 @@ input, textarea {
     .nav-list a:hover {
       color: var(--blue);
     }
-  }
+}
 
-
-/* Nav for mobil */
+  /* Nav for mobil */
 @media screen and (max-width: 1024px) {
   .nav-menu {
     position: absolute;
@@ -1405,17 +1426,10 @@ input, textarea {
   }
 }
 
-.nav-margin-top {
-  margin-top: 9rem;
-}
 
-.nav-link {
-  color: var(--offblack);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
 /* Css til at vise menu. Se javascript */
 .show-menu {
   opacity: 1;
@@ -1437,146 +1451,6 @@ input, textarea {
 
 
 
-
-
-.nav-header {
-position: sticky;
-top: 0;
-left: 0;
-width: 100%;
-background-color: var(--lightblue);
-}
-
-.nav {
-height: 3.5rem;
-}
-
-.nav-burger, 
-.nav-close {
-color: var(--blue);
-}
-
-.nav-logo-container {
-height: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.nav-logo img {
-  height: 3rem;
-}
-
-.nav-toggle {
-position: relative;
-width: 32px;
-height: 32px;
-}
-
-.nav-burger, 
-.nav-close {
-position: absolute;
-width: max-content;
-height: max-content;
-inset: 0;
-margin: auto;
-font-size: 1.25rem;
-cursor: pointer;
-transition: opacity .1s, transform .4s;
-}
-
-.nav-close {
-opacity: 0;
-}
-
-/* For store skærme */
-@media screen and (min-width: 1025px) {
-  .container {
-    margin-inline: auto;
-  }
-
-  .nav {
-    height: 5.5rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .nav-list {
-    height: 100%;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .nav-link {
-    height: 100%;
-    padding: 0;
-    justify-content: initial;
-    column-gap: .25rem;
-  }
-}
-
-/* Nav for mobil */
-@media screen and (max-width: 1024px) {
-.nav-menu {
-  position: absolute;
-  left: 0;
-  top: 2.5rem;
-  width: 100%;
-  height: calc(100vh - 3.5rem);
-  overflow: auto;
-  pointer-events: none;
-  opacity: 0;
-  transition: top .4s, opacity .3s;
-}
-.nav-list {
-  background-color: var(--lightblue);
-  padding-top: 1rem;
-}
-.nav-logo img {
-  height: 2.5rem;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-/* DET ER IKKE FEJL AT DET NEDENSTÅENDE KODE IKKE ER I EN MEDIA QUERY, DET ER TIL JAVASCRIPT */
-
-.nav-link {
-color: var(--offblack);
-padding: 1.25rem 1.5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-/* Css til at vise menu. Se javascript */
-.show-menu {
-opacity: 1;
-top: 3.5rem;
-pointer-events: initial;
-}
-
-/* css til at vise ikoner. Se javascript */
-.show-icon .nav-burger {
-opacity: 0;
-transform: rotate(90deg);
-}
-.show-icon .nav-close {
-opacity: 1;
-transform: rotate(90deg);
-}
 
 
 
