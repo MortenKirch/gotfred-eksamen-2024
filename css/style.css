@@ -146,7 +146,6 @@ h2{
     font-weight: var(--medium);
     font-size: 2.2rem;
   }
-<<<<<<< Updated upstream
 
 
   #drinkImage {
@@ -155,12 +154,6 @@ h2{
 
 
 
-=======
-  .forside-drikke img {
-    max-width: 100%;
-  }
-
->>>>>>> Stashed changes
 /* Forside bog */
 
 .forside-bog {
