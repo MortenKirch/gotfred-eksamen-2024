@@ -1071,8 +1071,12 @@ input, textarea {
 }
 
 .footer .social-icons a {
-  font-size: 24px;
+  font-size: 1.8rem;
   text-decoration: none;
+}
+
+.footer .social-icons img {
+  height: 1.8rem;
 }
 
 .footer .mail-info {
