@@ -1027,6 +1027,84 @@ input, textarea {
 }
 
 
+/* Footer */
+.footer {
+  background-color: #E7F1FF;
+  padding: 20px 0;
+  
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .container i {
+  color: #2D65B6;
+}
+
+.footer .info {
+  display: flex;
+  align-items: center;
+}
+
+.footer .info i {
+  font-size: 24px;
+  margin-right: 10px;
+ color: #2D65B6;
+}
+
+.footer .info p {
+  margin: 0;
+  font-size: 16px;
+  color: #111111;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+  
+}
+
+.footer .social-icons i {
+  color: #2D65B6;
+
+}
+
+.footer .social-icons a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.footer .social-icons img {
+  height: 1.7rem;
+}
+
+.footer .mail-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #2D65B6;
+}
+
+.footer .mail-info i {
+  font-size: 24px;
+  margin-right: 10px;
+ color: #2D65B6;
+}
+
+.footer .mail-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #111111;
+}
+
+
+
 /* media query for desktop  */
 @media screen and (max-width: 1025px) {
  
