@@ -521,9 +521,10 @@ height: 450px;
 
 .storkage-image {
   width: auto;
-  height: 35rem;
+  height: 32rem;
   opacity: 1;
   transition: opacity 1s ease-in-out;
+  margin-left: 10vw;
 }
 
 img.gul-image{
@@ -719,6 +720,7 @@ button[type="submit"] {
   flex: 1;
   padding: 20px;
   border: none;
+  margin-top: 4rem;
 }
 
 .vmv h2 {
@@ -1154,6 +1156,7 @@ input, textarea {
   }
   .storkage-image{
     width: 500px;
+    margin-left: 4vw;
   }
   .forside-header {
     height: 60vh;
@@ -1305,6 +1308,7 @@ input, textarea {
     .storkage-image{
       width: 400px;
       height: auto;
+      margin: auto;
     }
 
     .vores-rejse{
@@ -1358,7 +1362,7 @@ input, textarea {
 }
 
 .nav-header {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
