@@ -721,6 +721,7 @@ button[type="submit"] {
   flex: 1;
   padding: 20px;
   border: none;
+  margin-top: 4rem;
 }
 
 .vmv h2 {
