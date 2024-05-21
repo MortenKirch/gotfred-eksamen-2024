@@ -397,7 +397,7 @@ margin-bottom:0.25rem;
 }
 .produkt-formular-section{
    width: 80vw;
-   background-color: var(--lightblue);
+   background-color: var(--yellow);
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr;
@@ -433,9 +433,6 @@ padding: 10px;
 margin: 0.5rem;
 
 }
-
-
-
 .overskrift-udfyld{
    margin-top: 4rem;
    margin-bottom: 2rem;
@@ -517,8 +514,10 @@ height: 450px;
 .gul-box {
   display: flex;
   align-items: center;
-  background-color: var(--yellow);
+  background-color: var(--beige);
   height: 35rem;
+  margin-top: 90px;
+
 
 }
 
@@ -544,10 +543,10 @@ img.gul-image{
 }
 
 h1#catering {
-  color: #2D65B6;
+  color:var(--blue);
   font-weight: var(--medium);
   padding-bottom: 20px;
-  
+  margin: 0 0 30px 0;
 }
 
 
@@ -571,7 +570,7 @@ h1#catering {
 }
 
 .skriv-button {
-  background-color: #2D65B6;
+  background-color:var(--blue);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -584,7 +583,7 @@ h1#catering {
 
 .catering-formular-section {
   width: 80vw;
-  background-color: var(--lightblue);
+  background-color: var(--yellow);
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
@@ -598,7 +597,7 @@ h2#bestil {
   font-weight: var(--medium);
   padding: 30px;
   font-size: 2rem;
-  margin-top: 50px;
+  margin-top: 150px;
 
 }
 
@@ -616,7 +615,7 @@ h2#bestil {
 }
 
 .formular-section h2 {
-  color: #2D65B6;
+  color:var(--blue);
   margin-bottom: 20px; /* Add space below the heading */
     line-height: 1.2; /* Reduce line height for more compact text */
     text-align: center; /* Center the heading text */
@@ -692,7 +691,7 @@ input, textarea {
 
 
 button[type="submit"] {
-  background-color: #2D65B6;
+  background-color: var(--blue);
   color: white;
   padding: 10px 35px;
   border: none;
@@ -814,15 +813,11 @@ button[type="submit"] {
   align-items: center;
   display: flex;
 
- 
-
 }
 
 .drift-bg {
   width: 100vw;
 }
-
-
 
 .drift-p2 {
   padding-top: 50px;
@@ -835,9 +830,9 @@ button[type="submit"] {
 }
 
 .drift2-img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  background-image: url(/pictures/pattern-yellow.webp);
  background-repeat: no-repeat;
  background-size: cover;
@@ -854,8 +849,6 @@ button[type="submit"] {
   width: 100%;
   padding-bottom: 100px;
 }
-
-
 
 /* style af kontakt */
 
@@ -874,7 +867,7 @@ button[type="submit"] {
 }
 
 .kontact-info h2 {
-  color: #2D65B6;
+  color: var(--blue);
   font-weight: var(--medium);
   margin-bottom: 20px;
   padding: 40px;
@@ -909,8 +902,8 @@ button[type="submit"] {
 }
 
 .find-vejen-button {
-  background-color: #F8EEB7;
-  color: #3166b3;
+  background-color: var(--yellow);
+  color: var(--blue);
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
@@ -922,13 +915,13 @@ button[type="submit"] {
 }
 
 #kontakt {
-  color: #3166b3;
+  color: var(--blue);
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 h3 {
-  color: #3166b3;
+  color: var(--blue);
   font-weight: 400;
   margin-bottom: 20px;
   font-size: 1.8rem;
@@ -936,7 +929,7 @@ h3 {
 
 .info-item i {
   font-size: 24px;
-  color: #3166b3;
+  color: var(--blue);
 }
 
 .info-item p {
@@ -944,7 +937,7 @@ h3 {
 }
 
 .kontaktosform-section {
-  background-color: #F8EEB7;
+  background-color: var(--yellow);
   padding: 20px;
   border-radius: 10px;
   max-width: 850px;
@@ -1034,7 +1027,7 @@ input, textarea {
 
 /* Footer */
 .footer {
-  background-color: #E7F1FF;
+  background-color: var(--lightblue);
   padding: 20px 0;
   
 }
