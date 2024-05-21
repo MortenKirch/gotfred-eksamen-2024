@@ -26,10 +26,11 @@ ul {
 }
 h1{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--blue);
+    font-weight: var(--medium);
     font-family:'Montserrat', sans-serif;
-    font-weight: var(--light);
+    margin: 70px 0px 20px 0px;
 }
 h2{
   font-family:'Montserrat', sans-serif;
@@ -108,11 +109,11 @@ h2{
   background-repeat: no-repeat;
 }
 .bestil-section {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.463);
   height: 7rem;
   width: 100%;
   text-align: center;
-  margin-top: 170px;
+  margin-top: 160px;
 }
 .bestil-section h1,a {
   margin: 1rem;
@@ -121,6 +122,8 @@ h2{
 .bestil-section h1 {
   color: var(--blue);
   font-style: italic;
+  font-size: 1.8rem;
+
   font-weight: var(--regular);
 }
 .bestil-section a {
@@ -130,6 +133,7 @@ h2{
   font-weight: var(--light);
   border-radius: 20px;
   font-weight: var(--medium);
+  
 }
 
 /* forside drinks slider */
@@ -140,6 +144,14 @@ h2{
     font-weight: var(--medium);
     font-size: 2.2rem;
   }
+
+
+  #drinkImage {
+    width: 100%;
+  }
+
+
+
 /* Forside bog */
 
 .forside-bog {
@@ -201,6 +213,8 @@ h2{
    margin: auto;
    margin-top: 2rem;
    margin-bottom: 2rem;
+   color: var(--offblack);
+   font-weight: var(--regular);
   
    
 }
@@ -210,9 +224,13 @@ h2{
    text-align: center;
    gap: 50px;
    margin-bottom: 2rem;
-   
-
 }
+
+.container-kagebox p {
+  color: var(--offblack);
+  font-style: italic;
+}
+
 .container-beige-4{
 width: 150px;
 height: 150px;
@@ -223,14 +241,14 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 10px;
-padding: 10px;
+padding: 15px;
 margin-bottom: 15px;
 
 
 }
 .container-blue-round{
-   width: 60px;
-   height: 60px;
+   width: 50px;
+   height: 50px;
    border-radius: 40px;
    background-color: var(--blue);
 }
@@ -244,7 +262,7 @@ margin-bottom: 15px;
    align-items: center;
    gap: 10px;
    border-radius: 10px;
-   padding: 10px;
+   padding: 15px;
    margin-bottom: 15px;
  
 }
@@ -274,15 +292,16 @@ margin-bottom: 2rem;
 
 }
 .produkt-overskrift{
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    text-align: center;
    color: var(--offblack);
    font-weight: var(--light);
    margin: 30px 0px 20px 0px;
+
 }
 .produkt-information{
    border: 0.25px solid var(--offblack);
-   border-radius: 20px;
+   border-radius: 15px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -292,6 +311,7 @@ margin-bottom: 2rem;
 .produkt-billede{
 max-width: 300px;
 height: auto;
+
 }
 .produkt-ikoner{
    display: flex;
@@ -367,6 +387,7 @@ margin-bottom:0.25rem;
    margin-top: 4rem;
    color: var(--blue);
    font-family:'Montserrat', sans-serif;
+   margin-bottom: 2rem;
 }
 .produkt-formular-section{
    width: 80vw;
@@ -426,13 +447,16 @@ margin-left: 6vw;
 margin-top: 3rem;
 }
 .koeb-button{
-   width: 150px;
-   height: 30px;
-   border: 0;
-   border-radius: 20px;
-   background-color: var(--blue);
-   color: var(--offwhite);
-   margin: 20px 0px; 
+  background-color: #2D65B6;
+  font-weight: var(--medium);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  display: block;
+  margin: 20px auto;
+  text-align: center;
 }
 .koeb-liste{
    color: var(--offblack);
@@ -470,7 +494,6 @@ height: 450px;
    padding: 10px;
    border: 0;
    color: var(--offblack);
-   font-size: 1.2rem;
  
 }
 .total-pris::placeholder{
@@ -488,14 +511,15 @@ height: 450px;
 .gul-box {
   display: flex;
   align-items: center;
-  background-color: #F8EEB7;
+  background-color: var(--yellow);
+  height: 35rem;
 
 }
 
 .storkage-image {
-  width: 600px;
- 
-  height: auto;
+  width: auto;
+  height: 35rem;
+  margin-left: 10rem;
 }
 
 img.gul-image{
@@ -504,7 +528,6 @@ img.gul-image{
 
 .gul-text {
   width: 60%;
-  padding: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -522,7 +545,8 @@ h1#catering {
 
 
 .gul-text p {
-  color: #333;
+  color: var(--offblack);
+  font-size: 1.2rem;
 }
 
 
@@ -531,7 +555,7 @@ h1#catering {
   margin: 0 auto; 
   text-align: center; 
   padding: 30px;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 .text-container p {
@@ -557,15 +581,17 @@ h1#catering {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 15px;
+  margin-bottom: 100px;
 
 }
 
 h2#bestil {
-  font-weight: 400;
+  font-weight: var(--medium);
   padding: 30px;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-top: 50px;
 
 }
 
@@ -594,7 +620,7 @@ h2#bestil {
   grid-template-columns: 1fr 1fr; /* Create a two-column layout */
   gap: 20px; /* Add space between grid items */
   padding-left: 130px;
-  padding-top: 22px;
+  padding-top: 30px;
 }
 
 
@@ -697,7 +723,7 @@ button[type="submit"] {
   margin-top: 50px;
   padding-bottom: 20px;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 .vmv p {
@@ -710,9 +736,11 @@ button[type="submit"] {
 
 /* vores rejse */
 
-.vores-rejse-h2 {
+.vores-rejse-h1 {
   padding-top: 100px;
   padding-bottom: 50px;
+  font-weight: var(--medium);
+  font-size: 2rem;
 }
 
 .vores-rejse {
@@ -748,7 +776,8 @@ button[type="submit"] {
 /* den daglige drift */
 
 .drift-h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: var(--medium);
   padding-top: 100px;
   padding-bottom: 30px;
 }
@@ -836,7 +865,7 @@ button[type="submit"] {
 
 .kontact-info h2 {
   color: #2D65B6;
-  font-weight: 400;
+  font-weight: var(--medium);
   margin-bottom: 20px;
   padding: 40px;
 }
@@ -892,6 +921,7 @@ h3 {
   color: #3166b3;
   font-weight: 400;
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .info-item i {
@@ -957,7 +987,7 @@ input, textarea {
 
 .faq h2{
   color: #3166b3;
-  font-weight: 300;
+  font-weight: var(--medium);
   margin-bottom: 20px;
 }
 
@@ -1176,6 +1206,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -8rem;
 }
 
 .nav-logo img {
@@ -1223,12 +1254,17 @@ input, textarea {
       height: 100%;
       display: flex;
       column-gap: 3rem;
+      margin-right: -8rem;
     }
     .nav-link {
       height: 100%;
       padding: 0;
       justify-content: initial;
       column-gap: .25rem;
+    }
+
+    .nav-list a:hover {
+      color: var(--blue);
     }
   }
 
