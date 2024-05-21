@@ -1299,7 +1299,7 @@ align-items: center;
 }
 
 /* media query for mobile */
-@media screen and ( min-width: 414px ) and (max-width: 767px) {
+@media screen and ( min-width: 390px ) and (max-width: 767px) {
    #myForm{
       grid-template-columns:1fr;
     }
