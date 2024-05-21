@@ -874,7 +874,9 @@ button[type="submit"] {
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
 .kontakt-h2 {
@@ -886,7 +888,7 @@ button[type="submit"] {
 .kontact-info {
   text-align: center;
   margin-bottom: 40px;
-  width: 50vw;
+  width: auto;
 
 }
 
@@ -903,7 +905,8 @@ button[type="submit"] {
   justify-content: center;
   gap: 20px;
   flex-direction: column;
-  padding-left: 118px;
+ 
+ 
 }
 
 .info-item {
@@ -995,6 +998,15 @@ input, textarea {
   padding: 10px;
 
   border-radius: 4px;
+}
+
+.maps-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.find-vej{
+  margin-top: 1.5rem;
 }
 
 #kontaktos {
@@ -1277,6 +1289,9 @@ input, textarea {
     max-width: 100%;
     max-height: 100%;
   }
+  .konkakt-container{
+    flex-direction: column;
+  }
 }
 
 /* media query for mobile */
@@ -1368,9 +1383,7 @@ input, textarea {
       width: 30%;
     }
 
-    .konkakt-container{
-      flex-direction: column;
-    }
+   
     .maps-kontakt{
       width: 90vw;
     }
