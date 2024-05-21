@@ -1,3 +1,4 @@
+"use strict"
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
@@ -24,15 +25,18 @@ let currentIndex = 0;
 function updateSlide() {
   const drinkImage = document.querySelector('#drinkImage');
   const drinkType = document.querySelector('#drinkType');
+  drinkImage.style.opacity = 0;
 
 
   drinkImage.src = drinks[currentIndex].src;
   drinkType.textContent = drinks[currentIndex].text;
+  drinkImage.style.opacity = 1;
 
 
   currentIndex = 1 - currentIndex;
 
-  setTimeout(updateSlide, 5000);
+
+  setInterval(updateSlide, 10000);
 }
 updateSlide();
 

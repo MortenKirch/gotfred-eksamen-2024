@@ -21,4 +21,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // længden mellem hvert image swap, 5000ms/5 sek
     setInterval(changeImage, 5000);
+    
 });

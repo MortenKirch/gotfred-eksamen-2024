@@ -1,5 +1,5 @@
 
-"use strikt"
+"use strict"
 // DOMContentLoaded, sørger for at den loader content på siden først
 document.addEventListener("DOMContentLoaded", function() {
 //    forskellige billede sources i et array,
