@@ -1188,7 +1188,7 @@ input, textarea {
   .forside-header {
     height: 60vh;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 0;
   }
   .season-text {
     margin-top: 3rem;
@@ -1305,12 +1305,11 @@ input, textarea {
       width: 90%;
     }
     .catering-form{
-     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        gap: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
     }
     .extra-tekst{
       padding-bottom: 10px;
@@ -1384,6 +1383,102 @@ input, textarea {
       justify-content: center;
       align-items: center;
     }
+    
+    .forside-header {
+      height: 50vh;
+      width: 100%;
+      margin-top: 0rem;
+    }
+    .season-text {
+      margin-top: 3rem;
+      width: 10rem;
+      height: 4rem;
+      
+    }
+    .season-text h2 {
+      font-size: 1.2rem;
+    }
+    .season-text p {
+      font-size: 0.7rem;
+    }
+  /* om gotfred cafe */
+    .main-forside {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin: 0;
+      margin-top: 1.2rem;
+    }
+  
+    .gotfred-forside-text {
+      width: 100%;
+      padding-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      margin-bottom: 1.2rem;
+    }
+    .gotfred-forside-text p {
+      text-align: center;
+    }
+    .gotfred-forside-picture img {
+      height: 50vh;
+    }
+  /* forside bestil */
+    .forside-bestil {
+      max-width: 100%;
+      height: 100vh;
+    }
+    .bestil-section {
+      height: 4rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 160px;
+    }
+    .bestil-section h1,a {
+      margin: 2rem;
+    }
+    .bestil-section h1 {
+      color: var(--blue);
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    #drinkImage {
+      width: 100%;
+    }
+  
+    /* forside bog */
+  
+    .forside-bog {
+      margin: 3rem;
+      height: 32rem;
+      margin: 0;
+      margin-bottom: 13rem;
+      flex-direction: column;
+    }
+    .forside-bog-picture img {
+      height: 60vh;
+      width: auto;
+    }
+    .forside-bog-text {
+      height: 31.2rem;
+      width: 100%;
+      line-height: 1.4;
+      padding: 1rem;
+    }
+    
+    .forside-bog-text p {
+      font-size: 0.9rem;
+    }
+    .forside-bog-text h2 {
+      font-size: 1.4rem;
+      padding: 0.2rem;
+    }
+    .forside-bog-text a {
+      padding: 0.7rem 1.15rem;
+      font-size: 1.2rem;
+    }
+
+    
 }
 
 
