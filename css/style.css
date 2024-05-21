@@ -526,7 +526,7 @@ height: 450px;
 .storkage-image {
   width: auto;
   height: 35rem;
-  margin-left: 10rem;
+ 
 }
 
 img.gul-image{
@@ -1206,6 +1206,7 @@ input, textarea {
     }
     .gul-box{
       flex-direction: column-reverse;
+      height: auto;
     }
     .gul-text{
       width: 90%;
@@ -1226,11 +1227,26 @@ input, textarea {
       justify-content: center;
       text-align: start;
     
-    
-      
+  
+    }
+    .catering-formular-navn{
+      width: 50vw;
+    }
+    .catering-formular-email{
+      width: 50vw;
+    }
+    .catering-formular-kagedetaljer{
+      width: 50vw;
+    }
+    .catering-formular-kommentar{
+      width: 50vw;
+    }
+    .catering-formular-anledning{
+      width: 50vw;
     }
     .storkage-image{
       width: 400px;
+      height: auto;
     }
 
     .vores-rejse{
