@@ -50,13 +50,13 @@ h2{
   height: 4.5rem;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  margin-top: 3rem;
+  margin-top: 16rem;
   padding: 0.7rem;
 }
 
 .season-text h2,p {
   color: var(--blue);
-  text-align: center;
+  text-align: left;
 }
 .season-text p {
   font-weight: var(--light);
@@ -65,6 +65,7 @@ h2{
 /* Sæsonkage baggrunds billede. */
 
 .forside-header {
+  margin-top: 5rem;
   display: flex;
   justify-content: flex-end;
   background-image: url(../pictures/forside-saesonkage.webp);
@@ -85,13 +86,14 @@ h2{
 .gotfred-forside-text {
   background-color: var(--lightblue);
   height: auto;
-  width: 19.725rem;
+  width: 30.725rem;
   line-height: 1.9;
   padding: 1.7rem;
   padding-top: 6rem;
+  font-size: 1.1rem;
 }
 .gotfred-forside-picture img {
-  height: 100vh;
+  height: 90vh;
   width: auto;
 }
 
@@ -177,7 +179,7 @@ h2{
 .forside-bog-text {
   
   background-color: var(--yellow);
-  height: 39.45rem;
+  height: 35.45rem;
   width: 30rem;
   line-height: 1.75;
   padding: 1.5rem;
@@ -186,7 +188,7 @@ h2{
 
 .forside-bog-text p {
   color: var(--offblack);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .forside-bog-text h2 {
   color: var(--blue);
@@ -200,6 +202,11 @@ h2{
   font-weight: var(--regular);
   border-radius: 20px;
   font-size: 1.2rem;
+}
+
+button #forhandlereknap{
+color: #2D65B6;
+
 }
 
 
@@ -1153,12 +1160,24 @@ input, textarea {
   }
   .gul-text {
     width: 90%;
- 
-  
   }
   .storkage-image{
     width: 500px;
   }
+  .forside-header {
+    height: 60vw;
+    width: 95%;
+    margin-top: 4rem;
+  }
+  .season-text {
+    margin-top: 3rem;
+    
+    width: 12rem;
+    height: 4.5rem;
+    font-size: 0.7rem;
+  }
+
+
 
   .vores-rejse-content p{
     font-size: 12px;
@@ -1387,6 +1406,9 @@ input, textarea {
   }
 }
 
+.nav-margin-top {
+  margin-top: 9rem;
+}
 
 .nav-link {
   color: var(--offblack);

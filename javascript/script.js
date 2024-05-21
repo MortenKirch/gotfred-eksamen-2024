@@ -25,18 +25,14 @@ function updateSlide() {
   const drinkImage = document.querySelector('#drinkImage');
   const drinkType = document.querySelector('#drinkType');
 
-  drinkImage.style.opacity = 0;
 
-  setTimeout(function() {
-    drinkImage.src = drinks[currentIndex].src;
-    drinkType.textContent = drinks[currentIndex].text;
+  drinkImage.src = drinks[currentIndex].src;
+  drinkType.textContent = drinks[currentIndex].text;
 
-    drinkImage.style.opacity = 1;
-  }, 500);
 
   currentIndex = 1 - currentIndex;
 
-  setTimeout(updateSlide, 5500);
+  setTimeout(updateSlide, 5000);
 }
 updateSlide();
 
