@@ -857,10 +857,16 @@ button[type="submit"] {
 .infograpic-section{
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  
 }
 .infograpic-section img{
-  width: 50vw;
-  height: auto;
+  width: 70%;
+  height: 70%;
+  margin-top: 2rem;
+  
+  transition: opacity 1.5s ease-in-out;
 }
 
 /* style af kontakt */
