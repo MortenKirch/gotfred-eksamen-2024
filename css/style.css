@@ -159,16 +159,15 @@ h2{
   flex-direction: row;
   justify-content: center;
   margin: 3rem;
-}
-.forside-bog-picture {
   background-image: url(../pictures/pattern-yellow.webp);
-  width: 50vw;
-  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-left: 13%;
-  padding-top: 2.5%;
-
+  height: 32rem;
+  margin-bottom: 10rem;
+}
+.forside-bog-picture {
+  width: 50vw;
+  height: 70vh;
 }
 .forside-bog-picture img {
   height: 60vh;
@@ -1163,13 +1162,12 @@ input, textarea {
     margin-left: 4vw;
   }
   .forside-header {
-    height: 60vw;
-    width: 95%;
-    margin-top: 4rem;
+    height: 60vh;
+    width: 100%;
+    margin-top: 2rem;
   }
   .season-text {
     margin-top: 3rem;
-    
     width: 12rem;
     height: 4.5rem;
     font-size: 0.7rem;
@@ -1183,16 +1181,20 @@ input, textarea {
   }
 
   .gotfred-forside-text {
-    width: 10.725rem;
-    padding-top: 2rem;
-    font-size: 0.7rem;
+    width: 15rem;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  .gotfred-forside-text p {
+    text-align: center;
   }
   .gotfred-forside-picture img {
     height: 50vh;
   }
 /* forside bestil */
   .forside-bestil {
-    max-width: 90%;
+    max-width: 100%;
     height: 100vh;
   }
   .bestil-section {
@@ -1212,6 +1214,37 @@ input, textarea {
   #drinkImage {
     width: 93%;
   }
+
+  /* forside bog */
+
+  .forside-bog {
+    margin: 3rem;
+    height: 32rem;
+    margin-bottom: 0;
+  }
+  .forside-bog-picture img {
+    height: 60vh;
+    width: auto;
+  }
+  .forside-bog-text {
+    height: 31.2rem;
+    width: 30rem;
+    line-height: 1.4;
+    padding: 1rem;
+  }
+  
+  .forside-bog-text p {
+    font-size: 0.9rem;
+  }
+  .forside-bog-text h2 {
+    font-size: 1.4rem;
+    padding: 0.2rem;
+  }
+  .forside-bog-text a {
+    padding: 0.7rem 1.15rem;
+    font-size: 1.2rem;
+  }
+
   .vores-rejse-content p{
     font-size: 12px;
     margin-left: 20px; 
