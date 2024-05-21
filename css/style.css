@@ -444,13 +444,17 @@ margin: 0.5rem;
    font-size: 1.8rem;
 }
 .orderList{
-height: 450px;
+height: 380px;
 width: 300px;
 background-color: white;
 border-radius: 8px;
 margin: 2rem;
 margin-left: 6vw;
-margin-top: 4rem;
+margin-top: 4.5rem;
+  position: relative;  
+     
+
+
 }
 .koeb-button{
   background-color: #2D65B6;
@@ -473,10 +477,7 @@ margin-top: 4rem;
    border: 0;
 }
 
-.displayArea{
-width: 300px;
-height: 450px;
-}
+
 
 .removeButton{
  border: 0;
@@ -486,12 +487,7 @@ height: 450px;
  opacity: 60%;
 }
 
-.orderList{
-   position: relative;  
-   width: 300px;        
-   height: 400px;       
 
-}
 
 .total-pris {
    position: absolute;
