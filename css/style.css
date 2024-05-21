@@ -56,7 +56,7 @@ h2{
 
 .season-text h2,p {
   color: var(--blue);
-  text-align: center;
+  text-align: left;
 }
 .season-text p {
   font-weight: var(--light);
@@ -177,7 +177,7 @@ h2{
 .forside-bog-text {
   
   background-color: var(--yellow);
-  height: 39.45rem;
+  height: 35.45rem;
   width: 30rem;
   line-height: 1.75;
   padding: 1.5rem;
@@ -186,7 +186,7 @@ h2{
 
 .forside-bog-text p {
   color: var(--offblack);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .forside-bog-text h2 {
   color: var(--blue);
@@ -200,6 +200,11 @@ h2{
   font-weight: var(--regular);
   border-radius: 20px;
   font-size: 1.2rem;
+}
+
+button #forhandlereknap{
+color: #2D65B6;
+
 }
 
 
@@ -881,9 +886,7 @@ button[type="submit"] {
   flex-direction: column;
   padding-left: 118px;
 }
-.maps-kontakt{
 
-}
 .info-item {
   display: flex;
   align-items: center;
