@@ -56,7 +56,7 @@ h2{
 
 .season-text h2,p {
   color: var(--blue);
-  text-align: center;
+  text-align: left;
 }
 .season-text p {
   font-weight: var(--light);
@@ -178,7 +178,7 @@ h2{
 .forside-bog-text {
   
   background-color: var(--yellow);
-  height: 39.45rem;
+  height: 35.45rem;
   width: 30rem;
   line-height: 1.75;
   padding: 1.5rem;
@@ -187,7 +187,7 @@ h2{
 
 .forside-bog-text p {
   color: var(--offblack);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .forside-bog-text h2 {
   color: var(--blue);
@@ -201,6 +201,11 @@ h2{
   font-weight: var(--regular);
   border-radius: 20px;
   font-size: 1.2rem;
+}
+
+button #forhandlereknap{
+color: #2D65B6;
+
 }
 
 
@@ -882,9 +887,7 @@ button[type="submit"] {
   flex-direction: column;
   padding-left: 118px;
 }
-.maps-kontakt{
 
-}
 .info-item {
   display: flex;
   align-items: center;
@@ -1260,6 +1263,16 @@ input, textarea {
     .konkakt-container{
       flex-direction: column;
     }
+    .maps-kontakt{
+      width: 90vw;
+    }
+    .info-details{
+      padding-left: 0;
+    }
+    .konkakt-container{
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 
@@ -1286,6 +1299,7 @@ input, textarea {
   left: 0;
   width: 100%;
   background-color: var(--lightblue);
+  z-index: 1;
 }
 .nav-link {
   color: var(--offblack);
@@ -1306,7 +1320,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -8rem;
+
 }
 
 .nav-logo img {
@@ -1354,7 +1368,7 @@ input, textarea {
       height: 100%;
       display: flex;
       column-gap: 3rem;
-      margin-right: -8rem;
+      
     }
     .nav-link {
       height: 100%;
