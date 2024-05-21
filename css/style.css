@@ -1151,6 +1151,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -8rem;
 }
 
 .nav-logo img {
@@ -1198,12 +1199,17 @@ input, textarea {
       height: 100%;
       display: flex;
       column-gap: 3rem;
+      margin-right: -8rem;
     }
     .nav-link {
       height: 100%;
       padding: 0;
       justify-content: initial;
       column-gap: .25rem;
+    }
+
+    .nav-list a:hover {
+      color: var(--blue);
     }
   }
 
