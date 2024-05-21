@@ -144,6 +144,14 @@ h2{
     font-weight: var(--medium);
     font-size: 2.2rem;
   }
+
+
+  #drinkImage {
+    width: 100%;
+  }
+
+
+
 /* Forside bog */
 
 .forside-bog {
@@ -216,9 +224,13 @@ h2{
    text-align: center;
    gap: 50px;
    margin-bottom: 2rem;
-   
-
 }
+
+.container-kagebox p {
+  color: var(--offblack);
+  font-style: italic;
+}
+
 .container-beige-4{
 width: 150px;
 height: 150px;
@@ -482,7 +494,6 @@ height: 450px;
    padding: 10px;
    border: 0;
    color: var(--offblack);
-   font-size: 1.2rem;
  
 }
 .total-pris::placeholder{
