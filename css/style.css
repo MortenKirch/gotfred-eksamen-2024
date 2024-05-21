@@ -969,7 +969,7 @@ h3 {
   padding: 20px;
   border-radius: 10px;
   max-width: 850px;
-  height: 380px;
+ 
   margin: 0 auto;
 }
 
@@ -991,7 +991,8 @@ h3 {
 .kontakt-os-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
+  margin: 0 1rem;
 }
 
 input, textarea {
@@ -1012,11 +1013,12 @@ align-items: center;
 #kontaktos {
   background-color: #3166b3;
   color: white;
-  padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   align-self: center;
+  margin: 0;
+ 
 }
 
 .faq {
