@@ -124,32 +124,35 @@ h2{
   background-repeat: no-repeat;
 }
 
-.bestil-section {
-  background-color: rgba(255, 255, 255, 0.463);
-  height: 7rem;
-  width: 100%;
-  text-align: center;
-  margin-top: 160px;
+
+.bestil-kage-banner{
+  background-color: var(--yellow);
+  width: 34rem;
+  height: 3.5rem;
+  border-radius: 3rem;
 }
 
-.bestil-section h1 a {
-  margin: 1rem;
-  font-weight: var(--medium);
-}
-.bestil-section h1 {
-  color: var(--blue);
-  font-style: italic;
-  font-size: 1.8rem;
+.bestil-kage-banner h2 {
+  font-size: 1.4rem;
+  padding-top: 1rem;
   font-weight: var(--regular);
 }
 
+
+.bestil-section h1 a {
+  margin: 0 auto;
+  font-weight: var(--medium);
+
+}
+
+
 .bestil-section a {
   background-color: var(--offwhite);
+  margin: 0 auto;
   padding: 0.2rem 2rem;
   color: var(--blue);
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: var(--medium);
-  
 }
 
 /* forside drinks slider */
