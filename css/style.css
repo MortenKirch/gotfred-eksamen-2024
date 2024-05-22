@@ -264,7 +264,7 @@ button#forhandlerknap {
 /* style af kager og bestilling */
 
 .guide-tekst{
-  width: 40vw;
+  width: 56vw;
   display: flex;
   line-height: 2rem;
   margin: auto;
@@ -459,7 +459,7 @@ margin-bottom:0.25rem;
    grid-template-columns: 1fr 1fr;
    margin: auto;
    border-radius: 15px;
-   margin-bottom: 50px;
+   margin-bottom: 5rem;
    justify-content: center;
    align-items: center;
 
@@ -496,7 +496,7 @@ margin: 0.5rem;
 
 }
 .overskrift-udfyld{
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-family:'Montserrat', sans-serif;
   color: var(--blue);
@@ -553,10 +553,11 @@ margin: 0.5rem;
    padding: 10px;
    border: 0;
    color: var(--offblack);
+   
 }
 .total-pris::placeholder{
    color: black;
-   font-size: 1.2rem;
+   font-size: 1rem;
 }
 /* style af catering */
 
@@ -570,16 +571,17 @@ margin: 0.5rem;
   display: flex;
   align-items: center;
   background-color: var(--beige);
-  height: 35rem;
-  margin-top: 90px;
+  height: 40rem;
+  margin: 2rem;
+  margin-top: 3rem;
 }
 
 .storkage-image {
   width: auto;
-  height: 32rem;
+  height: 35rem;
   opacity: 1;
   transition: opacity 1s ease-in-out;
-  margin-left: 10vw;
+  margin-left: 6vw;
 }
 
 img.gul-image{
@@ -632,13 +634,14 @@ h1#catering {
   display: block;
   margin: 20px auto;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .catering-button{
   margin:0 auto; 
   background-color: var(--blue);
   color: white;
-  padding: 10px 35px;
+  padding: 0 30px;
   border: none;
   cursor: pointer;
   border-radius: 20px; 
@@ -665,13 +668,13 @@ h2#bestil {
   font-weight: var(--medium);
   padding: 30px;
   font-size: 2rem;
-  margin-top: 150px;
+  margin-top: 8rem;
 }
 
 
 .extra-tekst{
   font-weight: var(--light);
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: start;
   color: gray;
 }
@@ -691,7 +694,8 @@ h2#bestil {
 .catering-form {
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  gap: 20px; 
+  gap: 0px 20px;
+
   padding-left: 130px;
   padding-top: 30px;
   height: 36rem;
@@ -790,7 +794,10 @@ input, textarea {
   margin: 0px 20px 0px 20px;
   line-height: 2rem;
 }
-
+.vores-rejse-h2{
+  margin: 2rem;
+  margin-top: 3rem;
+}
 
 /* vores rejse */
 
@@ -1361,6 +1368,7 @@ align-items: center;
     }
     .orderList{
       justify-self: center;
+     margin: 2rem;
     }
 
     .catering-form{
