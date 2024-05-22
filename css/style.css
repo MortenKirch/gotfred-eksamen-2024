@@ -1189,6 +1189,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   text-decoration: none;
+  gap: 20px;
 }
 
 .footer .social-icons i {
@@ -1367,7 +1368,7 @@ align-items: center;
     padding: 0;
   }
   .footer .container .social-icons {
-    gap: 0;
+    gap: 0px;
   }
 }
 
@@ -1604,6 +1605,9 @@ align-items: center;
       justify-content: center;
       margin: 0;
       padding: 0;
+    }
+    .footer .social-icons {
+      gap: 0px;
     }
     .kontakt-h2 {
       font-size: 1.9rem;
