@@ -3,7 +3,7 @@ const parentElement = document.getElementById("myForm");
 // Url til vores json fil
 const url = "../json/kager.json";
 
-// Global variable to track total quantity
+// Global variable til at holde mængden af kager valgt
 let totalQuantity = 0;
 
 // Fetch JSON data
@@ -55,12 +55,20 @@ fetch(url)
             kage.ikoner.forEach(iconUrl => {
                 const icon = document.createElement("img");
                 icon.src = iconUrl;
-                icon.alt = "Icon";
+                icon.alt = "Ikon til kagerne";
                 productIcons.appendChild(icon);
             });
 
             // laver vores div som skal indholde vores plus og minus knapper som mængden af kager valgt
             const buttonsDiv = document.createElement("div");
+
+            // laver elementet for mængden af kager valgt bliver tilføget
+            const outputInput = document.createElement("input");
+            outputInput.type = "text";
+            outputInput.classList.add("output", "produkt-button-value");
+            outputInput.value = "0";
+            // lavet til en readOnly så man ikke kan skrive en værdi men skal bruge knapperne
+            outputInput.readOnly = true;
 
             // laver minus knap
             const minusButton = document.createElement("button");
@@ -75,13 +83,6 @@ fetch(url)
                 adjustValue(this.parentNode.querySelector(".output"), -1);
             };
 
-            // laver elementet for mængden af kager valgt bliver tilføget
-            const outputInput = document.createElement("input");
-            outputInput.type = "text";
-            outputInput.classList.add("output", "produkt-button-value");
-            outputInput.value = "0";
-            // lavet til en readOnly så man ikke kan skrive en værdi men skal bruge knapperne
-            outputInput.readOnly = true;
 
             // laver plus knappen, som er det samme som minus knappen bare at den ændre value til +1 istedet for -1
             const plusButton = document.createElement("button");
@@ -136,10 +137,10 @@ fetch(url)
 
             // opdatere output/input til at være en ny value
             outputField.value = newValue;
+            
         }
 
-    })
-    .catch(error => {
+    }).catch(error => {
         // catch tager fat hvis der eventuelt er fejl i vores fetch, også console logger den Error
         console.error("Error:", error);
     });
@@ -196,18 +197,18 @@ function displayValue(outputField, addButton) {
         setTimeout(function() {
             resetAddButton();
         }, 3000);
-        
+    // laver function til at resætte farve og tekst tilbage til start
+        function resetAddButton() {
+            addButton.style.backgroundColor = "#E7F1FF";
+            addButton.style.color = "#000000";
+            addButton.textContent = "TILFØJ";
+        }
 
     } else {
         // laver et else statement som går ind og siger du skal vægle mindst en kage hvis du bare trykker tilføg
         alert("Vælg venligst mindst 1 kage");
     }
-    // laver function til at resætte farve og tekst tilbage til start
-    function resetAddButton() {
-        addButton.style.backgroundColor = "#E7F1FF";
-        addButton.style.color = "#000000";
-        addButton.textContent = "TILFØJ";
-    }
+
 }
 
 // her laver vi en funktion som udregner hvor mange kager som brugeren har valgt
@@ -279,18 +280,16 @@ function updateTotalQuantity() {
 
 // en funktion som submitter vores form, men kun efter at have tjekket at antallet af kager er
 // over 4 og under 20
-function handleFormSubmit(event) {
+function formSubmit(event) {
     event.preventDefault(); 
 
     if (totalQuantity < 4) {
         alert("Vælg venligst mindst 4 kager.");
     } else if (totalQuantity > 20) {
         alert("Du kan maksimalt vælge 20 kager.");
-    } else {
-        event.target.submit();
-    }
+    } 
 }
 
-// laver en eventlistener til at kalde handleFormSubmit
+// laver en eventlistener til at kalde formSubmit
 const form = document.querySelector(".form");
-form.addEventListener("submit", handleFormSubmit);
+form.addEventListener("submit", formSubmit);
