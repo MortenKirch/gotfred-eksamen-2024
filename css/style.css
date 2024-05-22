@@ -118,7 +118,7 @@ h2{
   align-items: center;
   background-image: url(../pictures/forside-bestil.webp);
   max-width: 90%;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -204,12 +204,15 @@ h2{
 .forside-bog-text p {
   color: var(--offblack);
   font-size: 1.1rem;
+  width: 22rem;
+  margin: 0 auto;
 }
 
 .forside-bog-text h2 {
   color: var(--blue);
   font-weight: var(--medium);
   font-size: 2.75rem;
+  margin-bottom: 2.2rem;
 }
 
 .forside-bog-text a {
@@ -232,8 +235,9 @@ button#forhandlerknap {
   text-align: center;
   display: block;
   grid-column: span 2; 
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 8rem;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -1603,6 +1607,7 @@ align-items: center;
   margin-inline: 1.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  
 }
 
 .nav-header {
@@ -1611,7 +1616,7 @@ align-items: center;
   left: 0;
   width: 100%;
   background-color: var(--lightblue);
-  z-index: 1;
+  z-index: 3;
  
 }
 
