@@ -499,6 +499,7 @@ margin: 0.5rem;
   font-family:'Montserrat', sans-serif;
   color: var(--blue);
   font-size: 1.8rem;
+  font-weight: var(--regular);
 }
 .orderList{
  height: 380px;
