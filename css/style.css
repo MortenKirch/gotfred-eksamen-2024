@@ -120,38 +120,41 @@ h2{
   align-items: center;
   background-image: url(../pictures/forside-bestil.webp);
   max-width: 90%;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.bestil-section {
-  background-color: rgba(255, 255, 255, 0.463);
-  height: 7rem;
-  width: 100%;
-  text-align: center;
-  margin-top: 160px;
+
+.bestil-kage-banner{
+  background-color: var(--yellow);
+  width: 34rem;
+  height: 3.5rem;
+  border-radius: 3rem;
 }
 
-.bestil-section h1 a {
-  margin: 1rem;
-  font-weight: var(--medium);
-}
-.bestil-section h1 {
-  color: var(--blue);
-  font-style: italic;
-  font-size: 1.8rem;
+.bestil-kage-banner h2 {
+  font-size: 1.4rem;
+  padding-top: 1rem;
   font-weight: var(--regular);
 }
 
+
+.bestil-section h1 a {
+  margin: 0 auto;
+  font-weight: var(--medium);
+
+}
+
+
 .bestil-section a {
   background-color: var(--offwhite);
+  margin: 0 auto;
   padding: 0.2rem 2rem;
   color: var(--blue);
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: var(--medium);
-  
 }
 
 /* forside drinks slider */
@@ -203,12 +206,15 @@ h2{
 .forside-bog-text p {
   color: var(--offblack);
   font-size: 1.1rem;
+  width: 22rem;
+  margin: 0 auto;
 }
 
 .forside-bog-text h2 {
   color: var(--blue);
   font-weight: var(--medium);
   font-size: 2.75rem;
+  margin-bottom: 2.2rem;
 }
 
 .forside-bog-text a {
@@ -231,8 +237,9 @@ button#forhandlerknap {
   text-align: center;
   display: block;
   grid-column: span 2; 
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 8rem;
+  margin-bottom: 1.5rem;
 
 }
 
