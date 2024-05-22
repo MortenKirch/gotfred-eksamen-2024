@@ -39,7 +39,7 @@ function updateSlide() {
       // Fade in new image and text
       drinkImage.style.opacity = 1;
       drinkType.style.opacity = 1;
-  }, 1000); // CSS transition duration
+  }, 400); // CSS transition duration
 }
 
 // Initial call to updateSlide and setting interval
