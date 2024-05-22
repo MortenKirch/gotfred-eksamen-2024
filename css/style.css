@@ -1167,6 +1167,7 @@ align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px;
+
 }
 
 .footer .container i {
@@ -1175,8 +1176,9 @@ align-items: center;
 
 .footer .info {
   display: flex;
-  align-items: center;
+
   line-height: 2;
+  
 }
 
 .footer .info i {
@@ -1195,6 +1197,7 @@ align-items: center;
   justify-content: center;
   text-decoration: none;
   gap: 20px;
+  align-items: center;
 }
 
 .footer .social-icons i {
@@ -1417,6 +1420,16 @@ align-items: center;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 0;
+
+    }
+    .produkt-formular input{
+      width: 60%;
+    }
+    .produkt-formular textarea{
+      width: 60%;
+    }
+    .container-kagebox{
       gap: 0;
     }
     .extra-tekst{
