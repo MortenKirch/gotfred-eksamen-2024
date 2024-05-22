@@ -167,6 +167,10 @@ h2{
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+#drinkType {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
 
 /* Forside bog */
 
