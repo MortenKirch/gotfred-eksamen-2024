@@ -230,11 +230,7 @@ button#forhandlerknap {
 
 }
 
-.eapps-instagram-feed-posts-view{
-  background-image: url(/pictures/yellow-pattern.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 90%;
+#eapps-instagram-feed-1{
   margin-left: auto;
   margin-right: auto;
 }
