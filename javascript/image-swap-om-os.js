@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
             currentImage.style.opacity = 1;
         }, 1500); // css transtision duration/tid
     }
-    // længden mellem hvert image swap, 5000ms/5 sek
+    // længden mellem hvert image swap, 10000ms/10 sek
     setInterval(changeImage, 10000);
 });
