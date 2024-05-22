@@ -97,10 +97,10 @@ h2{
 .gotfred-forside-text {
   background-color: var(--lightblue);
   height: 80vh;
-  width: 18.725rem;
+  width: 17rem;
   line-height: 1.5;
   padding: 2rem 1.4rem 1.4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--offblack);
 }
 .gotfred-forside-text p {
@@ -151,11 +151,11 @@ h2{
 .bestil-section a {
   background-color: var(--offwhite);
   margin: 0 auto;
-  padding: 0.2rem 2rem;
+  padding: 0.45rem 2rem;
   color: var(--blue);
   border-radius: 50px;
-  font-weight: var(--medium);
-  margin-top: 1rem;
+  font-weight: 400;
+  margin-top: 2rem;
  
 }
 .bestil-section{
@@ -169,7 +169,7 @@ h2{
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-weight: var(--medium);
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 
