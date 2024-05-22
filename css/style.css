@@ -1161,10 +1161,11 @@ align-items: center;
 
 .footer .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .footer .container i {
@@ -1174,6 +1175,7 @@ align-items: center;
 .footer .info {
   display: flex;
   align-items: center;
+  line-height: 2;
 }
 
 .footer .info i {
