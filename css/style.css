@@ -120,8 +120,8 @@ h2{
   justify-content: center;
   align-items: center;
   background-image: url(../pictures/forside-bestil.webp);
-  max-width: 90%;
-  height: 100vh;
+  max-width: 95%;
+  height: 80vh;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,13 +131,13 @@ h2{
 .bestil-kage-banner{
   background-color: var(--yellow);
   width: 34rem;
-  height: 3.5rem;
+  height: 3rem;
   border-radius: 3rem;
 }
 
 .bestil-kage-banner h2 {
   font-size: 1.4rem;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   font-weight: var(--regular);
 }
 
@@ -172,11 +172,16 @@ h2{
   font-size: 2.2rem;
 }
 
+#drinkSlide{
+  width: 95%;
+  margin: 0 auto;
+}
 
 #drinkImage {
   width: 100%;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
+  margin: 0 auto;
 }
 #drinkType {
   opacity: 1;
@@ -193,7 +198,7 @@ h2{
   background-image: url(../pictures/pattern-yellow.webp);
   background-size: cover;
   background-repeat: no-repeat;
- 
+ margin-top: 4rem;
   margin-bottom: 10rem;
 }
 .forside-bog img {
@@ -218,7 +223,7 @@ h2{
 .forside-bog-text h2 {
   color: var(--blue);
   font-weight: var(--medium);
-  font-size: 2.75rem;
+  font-size: 2rem;
   margin-bottom: 2.2rem;
 }
 
