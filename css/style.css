@@ -739,7 +739,7 @@ button[type="submit"] {
   font-size: 1rem;
   color: var(--offblack);
   margin: 0px 20px 0px 20px;
-  line-height: 2rem ;
+  line-height: 2rem;
 }
 
 
@@ -863,13 +863,37 @@ button[type="submit"] {
 }
 
 .infograpic-section img {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 65%;
+  max-height: 65%;
   height: auto; 
   width: auto; 
-  margin-top: 2rem;
   transition: opacity 1.5s ease-in-out;
 }
+
+.infographic-h2 {
+  font-size: 2rem;
+  font-weight: var(--medium);
+}
+
+.infographic-p {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--offblack);
+  width: 80rem;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+
+
+
+
+
+
+
 /* style af kontakt */
 
 .konkakt-container {
