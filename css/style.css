@@ -853,7 +853,7 @@ input, textarea {
 .drift-h1 {
   font-size: 2rem;
   font-weight: var(--medium);
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
