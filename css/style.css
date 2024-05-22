@@ -1273,7 +1273,9 @@ align-items: center;
    .gul-text p {
     font-size: 1.2rem;
   }
-
+  .koeb-liste{
+    font-size: 1rem;
+  }
   #bestil{
     font-size: 2rem;
   }
@@ -1507,7 +1509,9 @@ align-items: center;
     .konkakt-container {
       flex-direction: column;
     }
-
+    .koeb-liste{
+      font-size: 1rem;
+    }
     .maps-kontakt{
       width: 90vw;
     }
