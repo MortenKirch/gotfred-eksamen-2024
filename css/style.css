@@ -59,13 +59,15 @@ h2{
   padding-top: 0.6rem;
 }
 
-.season-text h2,p {
+.season-text h2 {
   color: var(--blue);
   text-align: center;
 }
 
 .season-text p {
   font-weight: var(--light);
+  color: var(--blue);
+  text-align: center;
 }
 
 /* Sæsonkage baggrunds billede. */
@@ -187,11 +189,9 @@ h2{
 
 .forside-bog-text {
   background-color: var(--yellow);
- 
   width: 30rem;
   line-height: 1.75;
   padding: 1.5rem;
-  text-align: center;
 }
 
 .forside-bog-text p {
@@ -214,17 +214,29 @@ h2{
   font-size: 1.2rem;
 }
 
-button#forhandlerknap{
-font-size: 15px;
+button#forhandlerknap {
+  font-size: 15px;
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  text-align: center;
+  display: block;
+  grid-column: span 2; 
+  margin-top: 1rem;
+  margin-left: 8rem;
 
 }
+
 .eapps-instagram-feed-posts-view{
   background-image: url(/pictures/yellow-pattern.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 90%;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -611,6 +623,22 @@ h1#catering {
   text-align: center;
 }
 
+.catering-button{
+  margin:0 auto; 
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  text-align: center;
+  display: block;
+  grid-column: span 2; 
+  margin-bottom: 2rem;
+  margin-left: 33.5rem;
+
+}
+
 .catering-formular-section {
   width: 80vw;
   background-color: var(--yellow);
@@ -657,6 +685,7 @@ h2#bestil {
   gap: 20px; 
   padding-left: 130px;
   padding-top: 30px;
+  height: 36rem;
 }
 
 
@@ -720,7 +749,7 @@ input, textarea {
 }
 
 
-button[type="submit"] {
+/* button[type="submit"] {
   background-color: var(--blue);
   color: white;
   padding: 10px 35px;
@@ -732,7 +761,7 @@ button[type="submit"] {
   grid-column: span 2; 
   margin: 20px auto; 
  
-}
+} */
 
 
 
