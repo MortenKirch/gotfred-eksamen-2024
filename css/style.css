@@ -91,15 +91,20 @@ h2{
 
 .gotfred-forside-text {
   background-color: var(--lightblue);
-  height: auto;
-  width: 30.725rem;
+  height: 80vh;
+  width: 18.725rem;
   line-height: 1.9;
-  padding: 1.7rem;
+  padding: 2rem 1.4rem 1.4rem;
   font-size: 1.2rem;
+  color: var(--offblack);
+}
+.gotfred-forside-text p {
+  color: var(--offblack);
+  text-align: left;
 }
 
 .gotfred-forside-picture img {
-  height: 90vh;
+  height: 80vh;
   width: auto;
 }
 
