@@ -144,6 +144,7 @@ h2{
 .bestil-section h1 a {
   margin: 0 auto;
   font-weight: var(--medium);
+ 
 
 }
 
@@ -155,6 +156,11 @@ h2{
   color: var(--blue);
   border-radius: 50px;
   font-weight: var(--medium);
+ 
+}
+.bestil-section{
+  display: flex;
+  flex-direction: column;
 }
 
 /* forside drinks slider */
