@@ -1296,7 +1296,7 @@ align-items: center;
     height: 4.5rem;
     font-size: 0.7rem;
   }
-/* om gotfred cafe */
+  /* om gotfred cafe */
   .main-forside {
     display: flex;
     flex-direction: row;
@@ -1315,7 +1315,7 @@ align-items: center;
   }
 
  
-/* forside bestil */
+  /* forside bestil */
 
  
   .bestil-section h1,a {
@@ -1365,7 +1365,23 @@ align-items: center;
   .konkakt-container{
     flex-direction: column;
   }
+  .footer .container .info {
+    display: none;
+  }
+  .footer .container .mail-info {
+    display: none;
+  }
+  .footer .container {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .container .social-icons {
+    gap: 0;
+  }
 }
+
+
 
 /* media query for mobile */
 @media screen and ( min-width: 390px ) and (max-width: 767px) {
@@ -1576,6 +1592,19 @@ align-items: center;
     .forside-drikke h2{
       font-size: 1.5rem;
     }
+
+    .footer .container .info {
+      display: none;
+    }
+    .footer .container .mail-info {
+      display: none;
+    }
+    .footer .container {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    
 }
 
 /*=============== NAV ===============*/
