@@ -189,11 +189,9 @@ h2{
 
 .forside-bog-text {
   background-color: var(--yellow);
- 
   width: 30rem;
   line-height: 1.75;
   padding: 1.5rem;
-  text-align: center;
 }
 
 .forside-bog-text p {
