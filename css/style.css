@@ -1020,8 +1020,8 @@ input, textarea {
 }
 
 .find-vejen-button {
-  background-color: var(--yellow);
-  color: var(--blue);
+  background-color: var(--blue);
+  color: var(--offwhite);
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
