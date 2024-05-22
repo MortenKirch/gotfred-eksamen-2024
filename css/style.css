@@ -12,32 +12,37 @@
 }
 
 /* global selectors*/
+
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-      font-family:'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Montserrat', sans-serif;
 }
+
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 h1{
-    text-align: center;
-    font-size: 2rem;
-    color: var(--blue);
-    font-weight: var(--medium);
-    font-family:'Montserrat', sans-serif;
-    margin: 70px 0px 20px 0px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--blue);
+  font-weight: var(--medium);
+  font-family:'Montserrat', sans-serif;
+  margin: 70px 0px 20px 0px;
 }
+
 h2{
   font-family:'Montserrat', sans-serif;
-   color: var(--blue);
-   font-size: 2rem;
-   text-align: center;
-   font-weight: var(--light);
+  color: var(--blue);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: var(--light);
 }
 
 /* style af forside */
@@ -58,6 +63,7 @@ h2{
   color: var(--blue);
   text-align: left;
 }
+
 .season-text p {
   font-weight: var(--light);
 }
@@ -82,6 +88,7 @@ h2{
   justify-content: center;
   margin: 3rem;
 }
+
 .gotfred-forside-text {
   background-color: var(--lightblue);
   height: auto;
@@ -91,6 +98,7 @@ h2{
   padding-top: 8rem;
   font-size: 1.6rem;
 }
+
 .gotfred-forside-picture img {
   height: 90vh;
   width: auto;
@@ -109,6 +117,7 @@ h2{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .bestil-section {
   background-color: rgba(255, 255, 255, 0.463);
   height: 7rem;
@@ -116,6 +125,7 @@ h2{
   text-align: center;
   margin-top: 160px;
 }
+
 .bestil-section h1 a {
   margin: 1rem;
   font-weight: var(--medium);
@@ -124,9 +134,9 @@ h2{
   color: var(--blue);
   font-style: italic;
   font-size: 1.8rem;
-
   font-weight: var(--regular);
 }
+
 .bestil-section a {
   background-color: var(--offwhite);
   padding: 0.2rem 2rem;
@@ -138,21 +148,19 @@ h2{
 
 /* forside drinks slider */
 
-  .forside-drikke h2 {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-weight: var(--medium);
-    font-size: 2.2rem;
-  }
+.forside-drikke h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: var(--medium);
+  font-size: 2.2rem;
+}
 
 
-  #drinkImage {
-    width: 100%;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-  }
-
-
+#drinkImage {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
 
 /* Forside bog */
 
@@ -167,16 +175,18 @@ h2{
   height: 32rem;
   margin-bottom: 10rem;
 }
+
 .forside-bog-picture {
   width: 50vw;
   height: 70vh;
 }
+
 .forside-bog-picture img {
   height: 60vh;
   width: auto;
 }
+
 .forside-bog-text {
-  
   background-color: var(--yellow);
   height: 35.45rem;
   width: 30rem;
@@ -189,11 +199,13 @@ h2{
   color: var(--offblack);
   font-size: 1.1rem;
 }
+
 .forside-bog-text h2 {
   color: var(--blue);
   font-weight: var(--medium);
   font-size: 2.75rem;
 }
+
 .forside-bog-text a {
   background-color: var(--blue);
   padding: 0.7rem 1.15rem;
@@ -203,8 +215,8 @@ h2{
   font-size: 1.2rem;
 }
 
-button #forhandlereknap{
-color: #2D65B6;
+button#forhandlerknap{
+font-size: 15px;
 
 }
 
@@ -212,24 +224,23 @@ color: #2D65B6;
 /* style af kager og bestilling */
 
 .guide-tekst{
-   width: 40vw;
-   display: flex;
-   text-align: center;
-   line-height: 2rem;
-   margin: auto;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-   color: var(--offblack);
-   font-weight: var(--regular);
-  
-   
+  width: 40vw;
+  display: flex;
+  text-align: center;
+  line-height: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--offblack);
+  font-weight: var(--regular);
 }
+
 .container-kagebox{
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   gap: 50px;
-   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  margin-bottom: 2rem;
 }
 
 .container-kagebox p {
@@ -252,24 +263,25 @@ margin-bottom: 15px;
 
 
 }
+
 .container-blue-round{
-   width: 50px;
-   height: 50px;
-   border-radius: 40px;
-   background-color: var(--blue);
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: var(--blue);
 }
 .container-beige-6{
-   width: 225px;
-   height: 150px;
-   background-color: var(--beige);
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   border-radius: 10px;
-   padding: 15px;
-   margin-bottom: 15px;
+  width: 225px;
+  height: 150px;
+  background-color: var(--beige);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
  
 }
 
@@ -283,12 +295,12 @@ margin-bottom: 15px;
 
 
 #myForm{
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   justify-items: center;
   width: 90vw;
-margin: auto;
+  margin: auto;
 
 }
 
@@ -298,33 +310,37 @@ margin-bottom: 2rem;
 
 }
 .produkt-overskrift{
-   font-size: 1.2rem;
-   text-align: center;
-   color: var(--offblack);
-   font-weight: var(--light);
-   margin: 30px 0px 20px 0px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--offblack);
+  font-weight: var(--light);
+  margin: 30px 0px 20px 0px;
 
 }
+
 .produkt-information{
-   border: 0.25px solid var(--offblack);
-   border-radius: 15px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   overflow: hidden;
+  border: 0.25px solid var(--offblack);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
 }
+
 .produkt-billede{
 max-width: 300px;
 height: auto;
 
 }
+
 .produkt-ikoner{
    display: flex;
    justify-content: center;
    margin-bottom: 1.4rem;
 
 }
+
 .produkt-ikoner img{
 width: 18%;
 height: auto;
@@ -332,16 +348,16 @@ margin: 0 4px;
 }
 
 .produkt-p{
-      font-family:'Montserrat', sans-serif;
-      color: var(--offblack);
-      font-weight: 300;
-      font-size: 0.9rem;
-      padding: 20px 0px;
-      width: 98%;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 1.5rem;
-      height: 120px;
+  font-family:'Montserrat', sans-serif;
+  color: var(--offblack);
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 20px 0px;
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5rem;
+  height: 120px;
    
 }
 
@@ -353,6 +369,7 @@ margin: 0 4px;
    background-color: var(--beige);
    font-size: 1.2rem;
 }
+
 .produkt-plus-button{
    height: 30px;
    border: 0;
@@ -361,6 +378,7 @@ margin: 0 4px;
    background-color: var(--beige);
    font-size: 1.2rem;
 }
+
 .produkt-button-value{
 width: 30px;
 height: 30px;
@@ -368,6 +386,7 @@ border: 0;
 text-align: center;
 margin-bottom:0.25rem;
 }
+
 .produkt-tilfoj-knap{
    border: 0;
    border-radius: 20px;
@@ -388,6 +407,7 @@ margin-bottom:0.25rem;
    align-items: center;
    
 }
+
 .bestilling-overskrift{
    font-weight: var(--medium);
    font-size: 1.8rem;
@@ -417,9 +437,11 @@ border-radius: 10px;
 margin: 0.5rem;
 padding-left: 10px;
 }
+
 .container-kagebox p{
   text-align: center;
 }
+
 .formular-navn{
    height: 40px;
    width: 40vw;
@@ -439,24 +461,22 @@ margin: 0.5rem;
 
 }
 .overskrift-udfyld{
-   margin-top: 4rem;
-   margin-bottom: 2rem;
-   font-family:'Montserrat', sans-serif;
-   color: var(--blue);
-   font-size: 1.8rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family:'Montserrat', sans-serif;
+  color: var(--blue);
+  font-size: 1.8rem;
 }
 .orderList{
-height: 380px;
-width: 300px;
-background-color: white;
-border-radius: 8px;
-margin: 2rem;
-margin-left: 6vw;
-margin-top: 4.5rem;
-  position: relative;  
+ height: 380px;
+ width: 300px;
+ background-color: white;
+ border-radius: 8px;
+ margin: 2rem;
+ margin-left: 6vw;
+ margin-top: 4.5rem;
+ position: relative;  
      
-
-
 }
 .koeb-button{
   background-color: #2D65B6;
@@ -613,20 +633,20 @@ h2#bestil {
 .formular-section {
   background-color: var(--lightblue);
   padding: 20px;
-  border-radius: 10px; /* Add rounded corners */
+  border-radius: 10px; 
 }
 
 .formular-section h2 {
   color:var(--blue);
-  margin-bottom: 20px; /* Add space below the heading */
-    line-height: 1.2; /* Reduce line height for more compact text */
-    text-align: center; /* Center the heading text */
+  margin-bottom: 20px; 
+    line-height: 1.2; 
+    text-align: center; 
 }
 
 .catering-form {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Create a two-column layout */
-  gap: 20px; /* Add space between grid items */
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
   padding-left: 130px;
   padding-top: 30px;
 }
