@@ -237,6 +237,7 @@ button#forhandlerknap {
 #eapps-instagram-feed-1{
   margin-left: auto;
   margin-right: auto;
+  width: 60%!important;
 }
 
 
@@ -1306,7 +1307,10 @@ align-items: center;
     font-size: 1.1rem;
     line-height: 1.3;
   }
- 
+  #eapps-instagram-feed-1{
+    max-width:100%;
+  }
+
  
 /* forside bestil */
   .forside-bestil {
