@@ -144,8 +144,6 @@ h2{
 .bestil-section h1 a {
   margin: 0 auto;
   font-weight: var(--medium);
- 
-
 }
 
 
@@ -199,7 +197,6 @@ h2{
 }
 .forside-bog img {
   width: 35%;
-  
   object-fit: cover;
 }
 
@@ -247,7 +244,6 @@ button#forhandlerknap {
   margin-top: 2rem;
   margin-left: 8rem;
   margin-bottom: 1.5rem;
-
 }
 
 #eapps-instagram-feed-1{
@@ -298,8 +294,6 @@ gap: 10px;
 border-radius: 10px;
 padding: 15px;
 margin-bottom: 15px;
-
-
 }
 
 .container-blue-round{
@@ -376,7 +370,6 @@ height: auto;
    display: flex;
    justify-content: center;
    margin-bottom: 1.4rem;
-
 }
 
 .produkt-ikoner img{
@@ -438,12 +431,10 @@ margin-bottom:0.25rem;
 
 .produkt-formular{
    margin-right: 5vw;
-   
    border-radius: 20px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   
 }
 
 .bestilling-overskrift{
@@ -556,7 +547,6 @@ margin: 0.5rem;
    padding: 10px;
    border: 0;
    color: var(--offblack);
- 
 }
 .total-pris::placeholder{
    color: black;
@@ -576,8 +566,6 @@ margin: 0.5rem;
   background-color: var(--beige);
   height: 35rem;
   margin-top: 90px;
-
-
 }
 
 .storkage-image {
@@ -619,7 +607,6 @@ h1#catering {
 .text-container {
   max-width: 600px; 
   margin: 0 auto; 
-
   padding: 30px;
   margin-top: 10px;
 }
@@ -666,7 +653,6 @@ h1#catering {
   margin: 0 auto;
   border-radius: 15px;
   margin-bottom: 100px;
-
 }
 
 h2#bestil {
@@ -674,7 +660,6 @@ h2#bestil {
   padding: 30px;
   font-size: 2rem;
   margin-top: 150px;
-
 }
 
 
@@ -766,23 +751,6 @@ input, textarea {
   border-radius: 4px;
 }
 
-
-/* button[type="submit"] {
-  background-color: var(--blue);
-  color: white;
-  padding: 10px 35px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px; 
-  text-align: center;
-  display: block;
-  grid-column: span 2; 
-  margin: 20px auto; 
- 
-} */
-
-
-
 /* style af om gotfred */
 
 
@@ -855,8 +823,6 @@ input, textarea {
   font-weight: 400;
 }
 
-
-
 /* den daglige drift */
 
 .drift-h1 {
@@ -868,8 +834,7 @@ input, textarea {
 
 .drift-p {
   font-size: 1.1rem;
-  display: flex;  
-  
+  display: flex;
   color: var(--offblack);
   line-height: 2rem;
   padding-bottom: 30px;
@@ -891,7 +856,6 @@ input, textarea {
   align-items: center;
   display: flex;
   padding: 40px 0px;
-
 }
 
 .drift-bg {
@@ -907,7 +871,6 @@ input, textarea {
   padding-top: 50px;
   font-size: 1.2rem;
   width: 80vw;
- 
   margin: 0 auto;
 }
 
@@ -936,8 +899,7 @@ input, textarea {
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: center; 
-
+  align-items: center;
 }
 
 .infograpic-section img {
@@ -965,13 +927,6 @@ input, textarea {
   line-height: 2rem;
 }
 
-
-
-
-
-
-
-
 /* style af kontakt */
 
 .konkakt-container {
@@ -993,7 +948,6 @@ input, textarea {
   text-align: center;
   margin-bottom: 40px;
   width: auto;
-
 }
 
 .kontact-info h2 {
@@ -1009,8 +963,6 @@ input, textarea {
   justify-content: center;
   gap: 20px;
   flex-direction: column;
- 
- 
 }
 .åbningstider-tekst{
   line-height: 2rem;
@@ -1076,7 +1028,6 @@ h3 {
   padding: 20px;
   border-radius: 10px;
   max-width: 850px;
- 
   margin: 0 auto;
 }
 
@@ -1104,7 +1055,6 @@ h3 {
 
 input, textarea {
   padding: 10px;
-
   border-radius: 4px;
 }
 
@@ -1125,7 +1075,6 @@ align-items: center;
   border-radius: 20px;
   align-self: center;
   margin: 0;
- 
 }
 
 .faq {
@@ -1175,7 +1124,6 @@ align-items: center;
 .footer {
   background-color: var(--lightblue);
   padding: 20px 0;
-  
 }
 
 .footer .container {
@@ -1213,7 +1161,6 @@ align-items: center;
   justify-content: center;
   gap: 20px;
   text-decoration: none;
-  
 }
 
 .footer .social-icons i {
@@ -1269,8 +1216,6 @@ align-items: center;
     
     .formular-besked{
     width: 30.5vw;
-
-    
     }
     .overskrift-udfyld{
        font-size: 1.5rem;
@@ -1308,7 +1253,6 @@ align-items: center;
   }
   .forside-header {
     height: 60vh;
-    
     margin-top: 0;
   }
   .season-text {
@@ -1323,7 +1267,6 @@ align-items: center;
     flex-direction: row;
     justify-content: center;
     margin: 3rem;
-    
   }
 
   .gotfred-forside-text {
@@ -1364,7 +1307,6 @@ align-items: center;
 
   .forside-bog {
     margin: 3rem;
-    
     margin-bottom: 0;
   }
 
@@ -1439,8 +1381,6 @@ align-items: center;
       display: flex;
       justify-content: center;
       text-align: start;
-    
-  
     }
     .catering-formular-navn{
       width: 50vw;
@@ -1494,7 +1434,6 @@ align-items: center;
       flex-direction: column;
     }
 
-   
     .maps-kontakt{
       width: 90vw;
     }
@@ -1515,7 +1454,6 @@ align-items: center;
       margin-top: 3rem;
       width: 10rem;
       height: 4rem;
-      
     }
     .season-text h2 {
       font-size: 1.2rem;
@@ -1530,8 +1468,6 @@ align-items: center;
       justify-content: start;
       margin: 0;
       margin-top: 1.2rem;
-     
-      
     }
   
     .gotfred-forside-text {
@@ -1618,7 +1554,6 @@ align-items: center;
     }
 }
 
-
 /*=============== NAV ===============*/
 .container {
   max-width: 1400px;
@@ -1670,7 +1605,6 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   margin-left: 2rem;
-  
 }
 
 .nav-logo img {
@@ -1686,8 +1620,6 @@ align-items: center;
 .nav-close {
   opacity: 0;
 }
-
-
 
 /* For store skærme */
 @media screen and (min-width: 1025px) {
@@ -1744,10 +1676,6 @@ align-items: center;
   }
 }
 
-
-
-
-
 /* Css til at vise menu. Se javascript */
 .show-menu {
   opacity: 1;
@@ -1764,13 +1692,3 @@ align-items: center;
   opacity: 1;
   transform: rotate(90deg);
 }
-
-
-
-
-
-
-
-
-
-
