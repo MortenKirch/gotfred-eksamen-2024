@@ -1600,6 +1600,7 @@ align-items: center;
   margin-inline: 1.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  
 }
 
 .nav-header {
@@ -1608,7 +1609,7 @@ align-items: center;
   left: 0;
   width: 100%;
   background-color: var(--lightblue);
-  z-index: 1;
+  z-index: 3;
  
 }
 
