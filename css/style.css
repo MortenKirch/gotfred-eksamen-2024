@@ -499,6 +499,7 @@ margin: 0.5rem;
   font-family:'Montserrat', sans-serif;
   color: var(--blue);
   font-size: 1.8rem;
+  font-weight: var(--regular);
 }
 .orderList{
  height: 380px;
@@ -852,7 +853,7 @@ input, textarea {
 .drift-h1 {
   font-size: 2rem;
   font-weight: var(--medium);
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -861,10 +862,14 @@ input, textarea {
   display: flex;
   color: var(--offblack);
   line-height: 2rem;
-  padding-bottom: 30px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
+  width: 85vw;
+  margin: 0 auto;
 }
+
+
 
 .drift-container {
   display: flex;
@@ -894,7 +899,7 @@ input, textarea {
   padding-bottom: 30px;
   padding-top: 50px;
   font-size: 1.2rem;
-  width: 80vw;
+  width: 85vw;
   margin: 0 auto;
 }
 
@@ -927,8 +932,8 @@ input, textarea {
 }
 
 .infograpic-section img {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 62%;
+  max-height: 62%;
   height: auto; 
   width: auto; 
   transition: opacity 1.5s ease-in-out;
