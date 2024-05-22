@@ -1145,7 +1145,7 @@ align-items: center;
 .question {
   font-weight: bold;
   text-align: left;
-  padding-left: 30px
+  padding-left: 30px;
 }
 
 .answer{
@@ -1264,9 +1264,7 @@ align-items: center;
    h1{
       font-size: 2rem;
    }
-   h2{
-      font-size: 1.5rem;
-   }
+ 
 
    #catering{
     font-size: 1.5rem;
