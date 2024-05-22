@@ -214,17 +214,29 @@ h2{
   font-size: 1.2rem;
 }
 
-button#forhandlerknap{
-font-size: 15px;
+button#forhandlerknap {
+  font-size: 15px;
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  text-align: center;
+  display: block;
+  grid-column: span 2; 
+  margin-top: 1rem;
+  margin-left: 8rem;
 
 }
+
 .eapps-instagram-feed-posts-view{
   background-image: url(/pictures/yellow-pattern.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 90%;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
