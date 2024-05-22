@@ -1410,6 +1410,9 @@ align-items: center;
     .drift2-img-container img{
       width: 30%;
     }
+    .konkakt-container {
+      flex-direction: column;
+    }
 
    
     .maps-kontakt{
@@ -1483,6 +1486,8 @@ align-items: center;
     }
     #drinkImage {
       width: 100%;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 1;
     }
   
     /* forside bog */
