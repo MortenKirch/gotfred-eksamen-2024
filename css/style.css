@@ -794,7 +794,6 @@ input, textarea {
 .vmv h2 {
   font-family:'Montserrat', sans-serif;
   color: var(--blue);
- 
   padding-bottom: 20px;
   font-size: 1.8rem;
   font-weight: var(--regular);
@@ -1315,6 +1314,12 @@ align-items: center;
   #eapps-instagram-feed-1{
     max-width:100%;
   }
+  .vis-mis-val {
+    justify-content: center;
+  }
+  .vmv p {
+    font-size: 1rem;
+  }
 
  
   /* forside bestil */
@@ -1378,6 +1383,13 @@ align-items: center;
   .footer .container .social-icons {
     gap: 0px;
   }
+
+  .drift2-img-container img {
+    margin: 0px 6px; 
+    width: 23%;
+    padding: 50px 0px;
+  }
+
 }
 
 
