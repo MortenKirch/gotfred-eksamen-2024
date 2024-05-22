@@ -156,6 +156,7 @@ h2{
   color: var(--blue);
   border-radius: 50px;
   font-weight: var(--medium);
+  margin-top: 1rem;
  
 }
 .bestil-section{
@@ -253,6 +254,7 @@ button#forhandlerknap {
   margin-left: auto;
   margin-right: auto;
   width: 60%!important;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -262,7 +264,6 @@ button#forhandlerknap {
 .guide-tekst{
   width: 40vw;
   display: flex;
-  text-align: center;
   line-height: 2rem;
   margin: auto;
   margin-top: 2rem;
@@ -617,7 +618,7 @@ h1#catering {
 .text-container {
   max-width: 600px; 
   margin: 0 auto; 
-  text-align: center; 
+
   padding: 30px;
   margin-top: 10px;
 }
@@ -678,7 +679,7 @@ h2#bestil {
 
 .extra-tekst{
   font-weight: var(--light);
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: start;
   color: gray;
 }
@@ -809,7 +810,7 @@ input, textarea {
 }
 
 .vmv p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--offblack);
   margin: 0px 20px 0px 20px;
   line-height: 2rem;
@@ -844,7 +845,7 @@ input, textarea {
 }
 
 .vores-rejse-content p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   margin: 10px 10px 10px 90px;
   max-width: 700px;
@@ -865,9 +866,9 @@ input, textarea {
 }
 
 .drift-p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: flex;  
-  text-align: center;
+  
   color: var(--offblack);
   line-height: 2rem;
   padding-bottom: 30px;
@@ -898,12 +899,15 @@ input, textarea {
 
 .drift-p2 {
   padding-top: 50px;
-  text-align: center;
+
   color: var(--offblack);
   line-height: 2rem;
   padding-bottom: 30px;
   padding-top: 50px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  width: 80vw;
+ 
+  margin: 0 auto;
 }
 
 .drift2-img-container {
@@ -949,10 +953,10 @@ input, textarea {
 }
 
 .infographic-p {
-  text-align: center;
+  
   margin-top: 2rem;
   color: var(--offblack);
-  width: 80rem;
+  width: 80vw;
   text-align: left;
   margin: 0 auto;
   padding-top: 2rem;
@@ -1006,6 +1010,9 @@ input, textarea {
   flex-direction: column;
  
  
+}
+.åbningstider-tekst{
+  line-height: 2rem;
 }
 
 .info-item {
@@ -1280,7 +1287,7 @@ align-items: center;
     font-size: 1.5rem;
    }
    .gul-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   #bestil{
@@ -1696,7 +1703,7 @@ align-items: center;
     .nav-list {
       height: 100%;
       display: flex;
-      column-gap: 3rem;
+      column-gap: 4.5rem;
       margin-right: 2rem;
       
     }
