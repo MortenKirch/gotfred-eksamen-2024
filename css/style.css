@@ -914,7 +914,7 @@ input, textarea {
 
 .drift2-img-container img {
   margin: 0 25px; 
-  width: 25%;
+  width: 20.5%;
   padding: 50px 0px;
 }
 
@@ -1263,7 +1263,11 @@ align-items: center;
 
 /* media query for tablet */
 @media screen and ( min-width: 768px) AND ( max-width: 1024px) {
-   h1{
+  .nav-logo img {
+    padding-left: 13rem;
+  } 
+  
+  h1{
       font-size: 2rem;
    }
  
@@ -1299,6 +1303,9 @@ align-items: center;
     width: 12rem;
     height: 4.5rem;
     font-size: 0.7rem;
+  }
+  .season-text h2 {
+    font-size: 1.5rem;
   }
   /* om gotfred cafe */
   .main-forside {
@@ -1407,7 +1414,11 @@ align-items: center;
 
 /* media query for mobile */
 @media screen and ( min-width: 390px ) and (max-width: 767px) {
-   #myForm{
+    .nav-logo img {
+      padding-left: 1rem;
+    }
+  
+    #myForm{
       grid-template-columns:1fr;
     }
     .produkt-formular-section{
@@ -1419,11 +1430,18 @@ align-items: center;
      margin: 2rem;
     }
     .bestil-kage-banner{
-      width: auto;
+      width: 75vw;
+      margin: 0 auto;
     }
     .bestil-kage-banner h2{
-      font-size: 1rem;
+      font-size: 0.8rem;
      padding-bottom: 10px;
+     font-weight: var(--medium);
+    }
+    .bestil-section a {
+      padding: 0.25rem 1.5rem;
+      font-size: 0.8rem;
+      font-weight: var(--medium);
     }
     #forhandlerknap{
       margin-left: 2rem;
@@ -1455,8 +1473,14 @@ align-items: center;
     .produkt-formular textarea{
       width: 60%;
     }
+    .guide-tekst{
+      width: 80vw;
+    }
     .container-kagebox{
       gap: 0;
+    }
+    .container-kagebox div {
+      transform: scale(0.92);
     }
     .extra-tekst{
       padding-bottom: 10px;
@@ -1533,17 +1557,19 @@ align-items: center;
     
     .forside-header {
       height: 50vh;
+      background-image: url(../pictures/saeson-mobile.webp);
     }
     .season-text {
-      margin-top: 3rem;
+      margin-top: 1rem;
       width: 10rem;
-      height: 4rem;
+      height: 3.3rem;
     }
     .season-text h2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .season-text p {
       font-size: 0.7rem;
+      padding-right: 1.3rem;
     }
   /* om gotfred cafe */
     .main-forside {
@@ -1632,6 +1658,7 @@ align-items: center;
     .forside-bog-text a {
       padding: 0.7rem 1.15rem;
       font-size: 1.2rem;
+      
     }
 
     .forside-drikke h2{
@@ -1660,6 +1687,12 @@ align-items: center;
       margin-top: 1rem;
       padding: 8px 20px;
     }
+    #forhandlerknap {
+      font-size: 0.7rem;
+      margin: 4.7rem;
+      padding: 0.5rem;
+    }
+    
 }
 
 /*=============== NAV ===============*/
