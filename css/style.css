@@ -528,7 +528,7 @@ margin: 0.5rem;
    color: var(--offblack);
    margin-top: 1rem;
    list-style-type: none;
-   font-size: var(--light);
+   font-weight: var(--light);
    font-size: 1.2rem;
    border: 0;
 }
@@ -1067,7 +1067,7 @@ h3 {
 
 #message {
   height: 100px;
-  border-color: none;
+  border: 0;
 }
 
 #name, #email, #message {
