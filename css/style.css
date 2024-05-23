@@ -1558,7 +1558,7 @@ align-items: center;
     
     .forside-header {
       height: 50vh;
-      background-image: url(../pictures/saeson-mobile.webp)!important;
+      background-image: url(../pictures/saeson-mobile.webp);
     }
     .season-text {
       margin-top: 1rem;
